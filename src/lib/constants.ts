@@ -81,6 +81,7 @@ export const FLOWER_GLOSSARY: FlowerGlossaryItem[] = [
     significance: "Symbolizes auspicious beginnings, divine surrender, and spiritual awakening. The vibrant orange and yellow petals radiate warmth and joy.",
     availabilitySeason: "Year-round staple; varieties adjust between African and French marigold based on monsoon/winter.",
     includedIn: ["Value", "Basic", "Premium"],
+    imageUrl: "https://images.unsplash.com/photo-1597848212624-a19eb35e2651?auto=format&fit=crop&w=800&q=80",
   },
   {
     id: "hibiscus",
@@ -91,6 +92,7 @@ export const FLOWER_GLOSSARY: FlowerGlossaryItem[] = [
     significance: "Represents pure devotion, raw cosmic energy (Shakti), and divine grace. Essential offering on Tuesdays and Fridays.",
     availabilitySeason: "Available across all seasons; protected greenhouse sourcing during heavy rain.",
     includedIn: ["Value", "Basic", "Premium"],
+    imageUrl: "https://images.unsplash.com/photo-1550953153-9d0403cd2ab6?auto=format&fit=crop&w=800&q=80",
   },
   {
     id: "aparajita",
@@ -101,6 +103,7 @@ export const FLOWER_GLOSSARY: FlowerGlossaryItem[] = [
     significance: "The deep cobalt hue symbolizes invincibility and deep meditative absorption. Dear to Lord Shiva and Shani Dev.",
     availabilitySeason: "Peak during monsoon and post-monsoon; gracefully substituted with blue lotus or red marigold in peak dry summer.",
     includedIn: ["Value", "Basic", "Premium"],
+    imageUrl: "https://images.unsplash.com/photo-1596724855477-8d80f845a7c2?auto=format&fit=crop&w=800&q=80",
   },
   {
     id: "jasmine",
@@ -111,6 +114,7 @@ export const FLOWER_GLOSSARY: FlowerGlossaryItem[] = [
     significance: "Exudes pure divine fragrance, cooling tranquility, and inner purity. Brings calm peace to morning rituals.",
     availabilitySeason: "Spring, summer, and early autumn peak; substituted with winter Shevanti in cold months.",
     includedIn: ["Value", "Basic", "Premium"],
+    imageUrl: "https://images.unsplash.com/photo-1582794543139-8ac9cb0f7b11?auto=format&fit=crop&w=800&q=80",
   },
   {
     id: "tulsi",
@@ -121,6 +125,7 @@ export const FLOWER_GLOSSARY: FlowerGlossaryItem[] = [
     significance: "The most sacred botanical in Indian household worship, revered as an avatar of Goddess Lakshmi. Essential for all Vaishnava rituals.",
     availabilitySeason: "Freshly plucked daily year-round from dedicated organic herbal gardens.",
     includedIn: ["Value", "Basic", "Premium"],
+    imageUrl: "https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?auto=format&fit=crop&w=800&q=80",
   },
   {
     id: "durva",
@@ -131,6 +136,7 @@ export const FLOWER_GLOSSARY: FlowerGlossaryItem[] = [
     significance: "Three to five bladed sacred green shoot that pacifies all obstacles and cools spiritual thirst. Lord Ganesha's favorite daily offering.",
     availabilitySeason: "Plucked fresh with tender roots daily year-round.",
     includedIn: ["Value", "Basic", "Premium"],
+    imageUrl: "https://images.unsplash.com/photo-1533038590840-1cde6e668a91?auto=format&fit=crop&w=800&q=80",
   },
   {
     id: "belpatra",
@@ -141,6 +147,7 @@ export const FLOWER_GLOSSARY: FlowerGlossaryItem[] = [
     significance: "Trifoliate leaves representing Brahma, Vishnu, and Mahesh, as well as the three eyes of Shiva. Bestows instant peace.",
     availabilitySeason: "Specially sourced for every Monday delivery across Basic and Premium tiers.",
     includedIn: ["Basic (Mondays)", "Premium (Mondays)"],
+    imageUrl: "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=800&q=80",
   },
 ];
 

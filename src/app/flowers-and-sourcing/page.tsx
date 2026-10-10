@@ -83,50 +83,63 @@ export default function FlowersAndSourcingPage() {
               key={flower.id}
               variant="white"
               hasShadow={true}
-              padding="lg"
-              className="flex flex-col justify-between space-y-5"
+              padding="none"
+              className="flex flex-col justify-between overflow-hidden"
             >
-              <div className="space-y-4">
-                <div className="flex items-start justify-between gap-2 border-b-2 border-floro-border/20 pb-3">
-                  <div>
-                    <h3 className="text-xl font-bold font-display text-floro-primary">
-                      {flower.nameEnglish}
-                    </h3>
-                    <p className="text-sm font-bold text-floro-accent">
-                      {flower.nameHindi}
-                    </p>
-                  </div>
-                  <span className="text-[11px] font-mono italic text-floro-muted">
+              {flower.imageUrl && (
+                <div className="relative h-48 w-full overflow-hidden border-b-2 border-floro-border bg-floro-surface-soft">
+                  <img
+                    src={flower.imageUrl}
+                    alt={`${flower.nameEnglish} - ${flower.nameHindi}`}
+                    className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+                    loading="lazy"
+                  />
+                  <div className="absolute top-2.5 right-2.5 px-2 py-0.5 rounded bg-floro-surface/95 border border-floro-border text-[10px] font-mono font-bold text-floro-primary shadow-[1px_1px_0_#241D20]">
                     {flower.botanicalName}
-                  </span>
-                </div>
-
-                <div className="space-y-2 text-xs">
-                  <div>
-                    <span className="font-bold text-floro-primary">Sacred Deity: </span>
-                    <span className="text-floro-secondary">{flower.sacredDeity}</span>
-                  </div>
-
-                  <p className="text-floro-secondary leading-relaxed pt-1">
-                    {flower.significance}
-                  </p>
-
-                  <div className="pt-2 p-2.5 rounded bg-floro-canvas border border-floro-border/40 text-[11px] text-floro-secondary">
-                    <span className="font-bold text-floro-terracotta">Seasonality: </span>
-                    {flower.availabilitySeason}
                   </div>
                 </div>
-              </div>
+              )}
 
-              <div className="pt-3 border-t border-floro-border/20 flex flex-wrap gap-1">
-                {flower.includedIn.map((tier, idx) => (
-                  <span
-                    key={idx}
-                    className="px-2 py-0.5 rounded text-[10px] font-mono font-bold bg-floro-surface-soft border border-floro-border text-floro-primary"
-                  >
-                    {tier}
-                  </span>
-                ))}
+              <div className="p-6 sm:p-8 flex-1 flex flex-col justify-between space-y-5">
+                <div className="space-y-4">
+                  <div className="flex items-start justify-between gap-2 border-b-2 border-floro-border/20 pb-3">
+                    <div>
+                      <h3 className="text-xl font-bold font-display text-floro-primary">
+                        {flower.nameEnglish}
+                      </h3>
+                      <p className="text-sm font-bold text-floro-accent">
+                        {flower.nameHindi}
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="space-y-2 text-xs">
+                    <div>
+                      <span className="font-bold text-floro-primary">Sacred Deity: </span>
+                      <span className="text-floro-secondary">{flower.sacredDeity}</span>
+                    </div>
+
+                    <p className="text-floro-secondary leading-relaxed pt-1">
+                      {flower.significance}
+                    </p>
+
+                    <div className="pt-2 p-2.5 rounded bg-floro-canvas border border-floro-border/40 text-[11px] text-floro-secondary">
+                      <span className="font-bold text-floro-terracotta">Seasonality: </span>
+                      {flower.availabilitySeason}
+                    </div>
+                  </div>
+                </div>
+
+                <div className="pt-3 border-t border-floro-border/20 flex flex-wrap gap-1">
+                  {flower.includedIn.map((tier, idx) => (
+                    <span
+                      key={idx}
+                      className="px-2 py-0.5 rounded text-[10px] font-mono font-bold bg-floro-surface-soft border border-floro-border text-floro-primary"
+                    >
+                      {tier}
+                    </span>
+                  ))}
+                </div>
               </div>
             </NeoCard>
           ))}

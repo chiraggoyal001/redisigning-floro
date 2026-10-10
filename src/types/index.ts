@@ -76,6 +76,7 @@ export interface FlowerGlossaryItem {
   significance: string;
   availabilitySeason: string;
   includedIn: string[];
+  imageUrl?: string;
 }
 
 export interface FaqItem {

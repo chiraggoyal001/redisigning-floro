@@ -40,7 +40,7 @@ export const NeoCard: React.FC<NeoCardProps> = ({
 
   const shadowStyles = hasShadow ? "shadow-neo" : "";
   const hoverStyles = isHoverable
-    ? "neo-card-reveal group-hover/cards:scale-[0.98] group-hover/cards:opacity-60 group-hover/cards:blur-[1.5px] hover:!scale-[1.03] hover:!opacity-100 hover:!blur-none focus-within:!scale-[1.03] focus-within:!opacity-100 focus-within:!blur-none hover:shadow-neo-hover"
+    ? "neo-card-reveal group-hover/cards:scale-[0.99] group-hover/cards:opacity-85 group-hover/cards:blur-[0.5px] hover:!scale-[1.025] hover:!opacity-100 hover:!blur-none focus-within:!scale-[1.025] focus-within:!opacity-100 focus-within:!blur-none hover:shadow-neo-hover"
     : "";
 
   return (

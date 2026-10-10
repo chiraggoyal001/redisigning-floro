@@ -17,45 +17,87 @@ export default function RitualsAndFestivalsPage() {
   const weeklyCadence = [
     {
       day: "Monday (Somvar)",
-      deity: "Lord Shiva",
+      deity: "Lord Shiva (Mahadev)",
       flower: "Fresh Belpatra (Bilva leaves) & White blooms",
       desc: "Trifoliate Bilva leaves cool Lord Shiva's spiritual tapasya and bring mental peace. Included every Monday in Basic and Premium plans.",
+      image: "/images/madhubani/shiva_somvar.jpg",
     },
     {
       day: "Tuesday (Mangalvar)",
       deity: "Lord Hanuman & Maa Durga",
       flower: "Vibrant Red Hibiscus (Gudhal)",
       desc: "Red flowers embody intense devotion, protection, and the fiery divine strength of Shakti.",
+      image: "/images/madhubani/hanuman_mangalvar.jpg",
     },
     {
       day: "Wednesday (Budhvar)",
-      deity: "Lord Ganesha",
+      deity: "Lord Ganesha (Vighnaharta)",
       flower: "Doobh (Durva) Grass stems & Yellow Genda",
-      desc: "21 blades of tender Durva grass pacify all obstacles (Vighnaharta) and invoke wisdom.",
+      desc: "21 blades of tender Durva grass pacify all obstacles and invoke auspicious wisdom.",
+      image: "/images/madhubani/ganesha_budhvar.jpg",
     },
     {
       day: "Thursday (Guruvar)",
       deity: "Lord Vishnu & Brihaspati",
       flower: "Bright Yellow Marigold & Tulsi Patra",
       desc: "Golden yellow flowers signify divine light, dharma, and righteous auspiciousness.",
+      image: "/images/madhubani/vishnu_guruvar.jpg",
     },
     {
       day: "Friday (Shukravar)",
       deity: "Goddess Lakshmi & Devi",
       flower: "Fragrant Jasmine, Lotus & Pink blossoms",
       desc: "Sweet aromatic flowers invite abundance, beauty, peace, and domestic contentment.",
+      image: "/images/madhubani/lakshmi_shukravar.jpg",
     },
     {
       day: "Saturday (Shanivar)",
       deity: "Lord Hanuman & Shani Dev",
-      flower: "Aparajita (Butterfly Pea) & Marigold",
-      desc: "Deep indigo Aparajita petals symbolize meditation, fearlessness, and devotion.",
+      flower: "Aparajita (Butterfly Pea) & Blue blooms",
+      desc: "Deep indigo Aparajita petals symbolize meditative discipline, fearlessness, and devotion.",
+      image: "/images/madhubani/shani_shanivar.jpg",
     },
     {
       day: "Sunday (Ravivar)",
       deity: "Lord Surya (The Sun)",
       flower: "Fresh Red & Orange Marigold offerings",
       desc: "Offerings made at sunrise with arghya invoke vitality, health, and solar blessings.",
+      image: "/images/madhubani/surya_ravivar.jpg",
+    },
+  ];
+
+  const festivalTraditions = [
+    {
+      title: "Maha Shivratri",
+      deity: "Lord Shiva (Mahadev)",
+      date: "Phalguna Krishna Chaturdashi",
+      flower: "Trifoliate Bilva Patra & White Blooms",
+      desc: "All-night vigil with continuous abhishekam. Bilva leaves cool Lord Shiva's divine ascetic energy.",
+      image: "/images/madhubani/shiva_somvar.jpg",
+    },
+    {
+      title: "Sharad Navratri",
+      deity: "Maa Durga & Nine Forms",
+      date: "Ashvin Shukla Pratipada to Navami",
+      flower: "Vibrant Crimson Hibiscus & Mogra",
+      desc: "Nine sacred nights of worship. Red blossoms symbolize the triumph of Shakti and righteousness.",
+      image: "/images/madhubani/hanuman_mangalvar.jpg",
+    },
+    {
+      title: "Diwali & Lakshmi Puja",
+      deity: "Maa Mahalakshmi",
+      date: "Kartik Amavasya",
+      flower: "Golden Marigolds & Sacred Pink Lotus",
+      desc: "Illuminating every doorstep with clay deepams, marigold garlands, and pristine lotuses.",
+      image: "/images/madhubani/lakshmi_shukravar.jpg",
+    },
+    {
+      title: "Ganesh Chaturthi",
+      deity: "Lord Ganesha",
+      date: "Bhadrapada Shukla Chaturthi",
+      flower: "21 blades of Durva grass & Hibiscus",
+      desc: "Welcoming Ganpati Bappa with fresh morning Durva grass bundles, modaks, and vibrant hibiscus.",
+      image: "/images/madhubani/ganesha_budhvar.jpg",
     },
   ];
 
@@ -109,28 +151,109 @@ export default function RitualsAndFestivalsPage() {
               The Weekly Offering Cadence
             </h2>
             <p className="text-xs sm:text-sm text-floro-secondary">
-              How traditional Indian worship aligns flowers with each day of the week.
+              How traditional Indian worship aligns flowers with each day of the week, depicted in authentic Mithila Madhubani folk art.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 neo-card-group group/cards">
             {weeklyCadence.map((cad, idx) => (
-              <NeoCard key={idx} variant="white" hasShadow={true} padding="md" className="space-y-3">
-                <div className="flex items-center justify-between border-b border-floro-border/20 pb-2">
-                  <span className="text-xs font-mono font-bold text-floro-accent uppercase">
+              <NeoCard
+                key={idx}
+                variant="white"
+                hasShadow={true}
+                padding="none"
+                className="flex flex-col justify-between overflow-hidden"
+              >
+                {/* Madhubani Folk Art Image Header */}
+                <div className="relative h-48 sm:h-52 w-full overflow-hidden border-b-2 border-floro-border bg-floro-surface-soft">
+                  <img
+                    src={cad.image}
+                    alt={`${cad.deity} - Madhubani folk art`}
+                    className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+                    loading="lazy"
+                  />
+                  <div className="absolute top-2.5 left-2.5 px-2.5 py-0.5 rounded bg-floro-surface/95 border border-floro-border text-[11px] font-mono font-bold text-floro-accent uppercase shadow-[1px_1px_0_#241D20]">
                     {cad.day}
-                  </span>
-                  <span className="text-xs font-bold text-floro-primary">
-                    {cad.deity}
-                  </span>
+                  </div>
+                  <div className="absolute bottom-2.5 right-2.5 px-2 py-0.5 rounded bg-black/75 backdrop-blur-xs text-white text-[10px] font-mono">
+                    Mithila Art
+                  </div>
                 </div>
-                <div>
-                  <h4 className="text-sm font-bold text-floro-primary">
-                    {cad.flower}
-                  </h4>
-                  <p className="text-xs text-floro-secondary mt-1 leading-relaxed">
-                    {cad.desc}
-                  </p>
+
+                <div className="p-5 sm:p-6 flex-1 flex flex-col justify-between space-y-3">
+                  <div className="space-y-2">
+                    <div className="flex items-center justify-between border-b border-floro-border/20 pb-2">
+                      <h3 className="text-base font-bold font-display text-floro-primary">
+                        {cad.deity}
+                      </h3>
+                    </div>
+                    <div>
+                      <h4 className="text-xs font-bold text-floro-accent">
+                        🌸 {cad.flower}
+                      </h4>
+                      <p className="text-xs text-floro-secondary mt-1.5 leading-relaxed">
+                        {cad.desc}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </NeoCard>
+            ))}
+          </div>
+        </div>
+
+        <GarlandDivider className="my-16" />
+
+        {/* Major Festivals Section */}
+        <div className="space-y-8">
+          <div className="text-center max-w-xl mx-auto space-y-2">
+            <span className="text-xs font-mono font-bold tracking-wider uppercase text-floro-accent">
+              Sacred Occasions
+            </span>
+            <h2 className="text-2xl sm:text-3xl font-bold font-display text-floro-primary">
+              Major Festival Ritual Traditions
+            </h2>
+            <p className="text-xs sm:text-sm text-floro-secondary">
+              Elevated floral offerings and sacred deity customs across India&apos;s grandest celebrations.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 neo-card-group group/cards">
+            {festivalTraditions.map((fest, idx) => (
+              <NeoCard
+                key={idx}
+                variant="white"
+                hasShadow={true}
+                padding="none"
+                className="flex flex-col justify-between overflow-hidden"
+              >
+                <div className="relative h-44 w-full overflow-hidden border-b-2 border-floro-border bg-floro-surface-soft">
+                  <img
+                    src={fest.image}
+                    alt={`${fest.title} - Madhubani folk art`}
+                    className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+                    loading="lazy"
+                  />
+                  <div className="absolute top-2.5 left-2.5 px-2 py-0.5 rounded bg-floro-surface/95 border border-floro-border text-[10px] font-mono font-bold text-floro-primary shadow-[1px_1px_0_#241D20]">
+                    {fest.date}
+                  </div>
+                  <div className="absolute bottom-2.5 right-2.5 px-2 py-0.5 rounded bg-black/75 backdrop-blur-xs text-white text-[10px] font-mono">
+                    Mithila Art
+                  </div>
+                </div>
+
+                <div className="p-4 sm:p-5 flex-1 flex flex-col justify-between space-y-2">
+                  <div className="space-y-1.5">
+                    <h3 className="text-base font-bold font-display text-floro-primary">
+                      {fest.title}
+                    </h3>
+                    <p className="text-xs font-bold text-floro-accent">
+                      🌺 {fest.flower}
+                    </p>
+                    <p className="text-xs text-floro-secondary leading-relaxed">
+                      {fest.desc}
+                    </p>
+                  </div>
                 </div>
               </NeoCard>
             ))}
