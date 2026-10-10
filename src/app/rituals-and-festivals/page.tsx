@@ -113,7 +113,7 @@ export default function RitualsAndFestivalsPage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 neo-card-group group/cards">
             {weeklyCadence.map((cad, idx) => (
               <NeoCard key={idx} variant="white" hasShadow={true} padding="md" className="space-y-3">
                 <div className="flex items-center justify-between border-b border-floro-border/20 pb-2">

@@ -47,7 +47,7 @@ export default function SubscriptionsPage() {
         <PlanComparisonTable />
 
         {/* 3 Pillar Guarantees */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-4">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-4 neo-card-group group/cards">
           <NeoCard variant="white" hasShadow={true} padding="md" className="space-y-2">
             <div className="p-2 rounded bg-floro-canvas border border-floro-border w-fit text-floro-accent">
               <Calendar className="w-5 h-5" />

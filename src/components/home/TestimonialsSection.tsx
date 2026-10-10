@@ -42,7 +42,7 @@ export const TestimonialsSection: React.FC = () => {
           </p>
         </div>
 
-        <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6 neo-card-group group/cards">
           {testimonials.map((t, idx) => (
             <NeoCard
               key={idx}

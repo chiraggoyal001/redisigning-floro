@@ -12,7 +12,7 @@ export const NeoCard: React.FC<NeoCardProps> = ({
   children,
   variant = "white",
   hasShadow = true,
-  isHoverable = false,
+  isHoverable = true,
   padding = "md",
   rounded = "card",
   className = "",
@@ -38,15 +38,14 @@ export const NeoCard: React.FC<NeoCardProps> = ({
     largeCard: "rounded-largeCard",
   };
 
-  const shadowStyles = hasShadow
-    ? isHoverable
-      ? "shadow-neo hover:shadow-neo-hover hover:translate-x-[-2px] hover:translate-y-[-2px] transition-all duration-150"
-      : "shadow-neo"
+  const shadowStyles = hasShadow ? "shadow-neo" : "";
+  const hoverStyles = isHoverable
+    ? "neo-card-reveal group-hover/cards:scale-[0.98] group-hover/cards:opacity-60 group-hover/cards:blur-[1.5px] hover:!scale-[1.03] hover:!opacity-100 hover:!blur-none focus-within:!scale-[1.03] focus-within:!opacity-100 focus-within:!blur-none hover:shadow-neo-hover"
     : "";
 
   return (
     <div
-      className={`border-2 border-floro-border ${variantStyles[variant]} ${roundedStyles[rounded]} ${paddingStyles[padding]} ${shadowStyles} ${className}`}
+      className={`border-2 border-floro-border ${variantStyles[variant]} ${roundedStyles[rounded]} ${paddingStyles[padding]} ${shadowStyles} ${hoverStyles} ${className}`}
       {...props}
     >
       {children}

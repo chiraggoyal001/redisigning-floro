@@ -6,44 +6,12 @@ import { NeoCard } from "@/components/common/NeoCard";
 import { NeoButton } from "@/components/common/NeoButton";
 import { GarlandDivider } from "@/components/folk-art/GarlandDivider";
 import { Leaf, Droplets, Sparkles, AlertCircle } from "lucide-react";
-import HoverRevealCards, { CardItem } from "@/components/ui/cards";
 
 export const metadata: Metadata = {
   title: "Flowers & Sourcing Standards — Floro",
   description:
     "Explore Floro's botanical glossary with Hindi script, deity associations, and our transparent seasonal sourcing standards.",
 };
-
-const DEVOTIONAL_FLOWER_ITEMS: CardItem[] = [
-  {
-    id: "genda",
-    title: "Genda (Marigold)",
-    subtitle: "Sun Deity & Vishnu Puja",
-    imageUrl:
-      "https://images.unsplash.com/photo-1597848212624-a19eb35e2651?auto=format&fit=crop&w=800&q=80",
-  },
-  {
-    id: "mogra",
-    title: "Mogra (Jasmine)",
-    subtitle: "Devi & Evening Aarti",
-    imageUrl:
-      "https://images.unsplash.com/photo-1582794543139-8ac9cb0f7b11?auto=format&fit=crop&w=800&q=80",
-  },
-  {
-    id: "kamal",
-    title: "Kamal (Sacred Lotus)",
-    subtitle: "Mahalakshmi Blessing",
-    imageUrl:
-      "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?auto=format&fit=crop&w=800&q=80",
-  },
-  {
-    id: "gudhal",
-    title: "Gudhal (Hibiscus)",
-    subtitle: "Lord Ganesha & Durga",
-    imageUrl:
-      "https://images.unsplash.com/photo-1550953153-9d0403cd2ab6?auto=format&fit=crop&w=800&q=80",
-  },
-];
 
 export default function FlowersAndSourcingPage() {
   return (
@@ -63,31 +31,9 @@ export default function FlowersAndSourcingPage() {
         </div>
       </section>
 
-      {/* Interactive Visual Gallery */}
-      <section className="max-w-container mx-auto px-4 sm:px-6 lg:px-8 py-10 space-y-6">
-        <div className="text-center max-w-xl mx-auto space-y-2">
-          <span className="text-xs font-mono font-bold tracking-wider uppercase text-floro-accent">
-            Interactive Daily Offerings
-          </span>
-          <h2 className="text-2xl sm:text-3xl font-bold font-display text-floro-primary">
-            Fresh Flower Visual Gallery
-          </h2>
-          <p className="text-xs sm:text-sm text-floro-secondary">
-            Hover over any petal below to reveal sacred bloom details and traditional puja associations.
-          </p>
-        </div>
-
-        <div className="flex justify-center">
-          <HoverRevealCards
-            items={DEVOTIONAL_FLOWER_ITEMS}
-            cardClassName="border-2 border-floro-border shadow-[4px_4px_0_#241D20]"
-          />
-        </div>
-      </section>
-
       {/* Sourcing Principles */}
       <section className="max-w-container mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 neo-card-group group/cards">
           <NeoCard variant="white" hasShadow={true} padding="md" className="space-y-2">
             <div className="p-2 rounded bg-floro-canvas border border-floro-border w-fit text-floro-leaf">
               <Leaf className="w-5 h-5" />
@@ -131,7 +77,7 @@ export default function FlowersAndSourcingPage() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 neo-card-group group/cards">
           {FLOWER_GLOSSARY.map((flower) => (
             <NeoCard
               key={flower.id}

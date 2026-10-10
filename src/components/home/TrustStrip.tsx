@@ -28,11 +28,11 @@ export const TrustStrip: React.FC = () => {
   return (
     <section className="w-full bg-floro-surface border-b-2 border-floro-border py-8 sm:py-10">
       <div className="max-w-container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 neo-card-group group/cards">
           {trustPoints.map((item, idx) => (
             <div
               key={idx}
-              className="p-5 rounded-card border-2 border-floro-border bg-floro-canvas/50 shadow-[2px_2px_0_#241D20] flex flex-col gap-2"
+              className="neo-card-reveal p-5 rounded-card border-2 border-floro-border bg-floro-surface shadow-[2px_2px_0_#241D20] hover:shadow-neo-hover flex flex-col gap-2"
             >
               <div className="p-2 w-fit rounded-control bg-floro-surface border-2 border-floro-border shadow-[1px_1px_0_#241D20]">
                 {item.icon}

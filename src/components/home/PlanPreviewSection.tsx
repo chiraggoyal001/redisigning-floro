@@ -47,7 +47,7 @@ export const PlanPreviewSection: React.FC = () => {
         </div>
 
         {/* 3 Plan Cards Grid */}
-        <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
+        <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch neo-card-group group/cards">
           {FLORO_PLANS.map((plan) => {
             const isBasic = plan.id === "basic";
 

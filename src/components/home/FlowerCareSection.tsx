@@ -20,8 +20,8 @@ export const FlowerCareSection: React.FC = () => {
               Puja flowers are sacred offerings. We never treat them like ordinary commodity produce. Each stem is inspected for cleanliness, freshness, and pest-free purity before packing in eco-conscious wraps.
             </p>
 
-            <div className="space-y-4 pt-2">
-              <div className="p-4 rounded-card border-2 border-floro-border bg-floro-canvas flex items-start gap-3">
+            <div className="space-y-4 pt-2 neo-card-group group/cards">
+              <div className="neo-card-reveal p-4 rounded-card border-2 border-floro-border bg-floro-surface shadow-[2px_2px_0_#241D20] hover:shadow-neo-hover flex items-start gap-3">
                 <div className="p-2 rounded bg-floro-surface border border-floro-border text-floro-info shrink-0">
                   <Droplets className="w-5 h-5" />
                 </div>
@@ -33,7 +33,7 @@ export const FlowerCareSection: React.FC = () => {
                 </div>
               </div>
 
-              <div className="p-4 rounded-card border-2 border-floro-border bg-floro-canvas flex items-start gap-3">
+              <div className="neo-card-reveal p-4 rounded-card border-2 border-floro-border bg-floro-surface shadow-[2px_2px_0_#241D20] hover:shadow-neo-hover flex items-start gap-3">
                 <div className="p-2 rounded bg-floro-surface border border-floro-border text-floro-leaf shrink-0">
                   <SacredLeaves type="tulsi" size={20} />
                 </div>
@@ -45,7 +45,7 @@ export const FlowerCareSection: React.FC = () => {
                 </div>
               </div>
 
-              <div className="p-4 rounded-card border-2 border-floro-border bg-floro-canvas flex items-start gap-3">
+              <div className="neo-card-reveal p-4 rounded-card border-2 border-floro-border bg-floro-surface shadow-[2px_2px_0_#241D20] hover:shadow-neo-hover flex items-start gap-3">
                 <div className="p-2 rounded bg-floro-surface border border-floro-border text-floro-terracotta shrink-0">
                   <Recycle className="w-5 h-5" />
                 </div>
