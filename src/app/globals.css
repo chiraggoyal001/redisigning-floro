@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Noto+Sans+Devanagari:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --canvas: #FFF9F1;
+  --surface: #FFFFFF;
+  --text-primary: #20191C;
+  --text-secondary: #63595C;
+  --accent: #E9005B;
+  --border: #241D20;
+}
+
+@layer base {
+  body {
+    background-color: #FFF9F1;
+    color: #20191C;
+    font-family: 'DM Sans', system-ui, -apple-system, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Space Grotesk', system-ui, -apple-system, sans-serif;
+    letter-spacing: -0.025em;
+  }
+
+  ::selection {
+    background-color: #E9005B;
+    color: #FFFFFF;
+  }
+}
+
+@layer utilities {
+  /* Neo-brutalist interactive utilities */
+  .neo-box {
+    border: 2px solid #241D20;
+    box-shadow: 4px 4px 0 #241D20;
+    transition: transform 140ms cubic-bezier(0.2, 0, 0, 1), box-shadow 140ms cubic-bezier(0.2, 0, 0, 1);
+  }
+
+  .neo-box-hover:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 6px 6px 0 #241D20;
+  }
+
+  .neo-box-active:active {
+    transform: translate(2px, 2px);
+    box-shadow: 2px 2px 0 #241D20;
+  }
+
+  .neo-border {
+    border: 2px solid #241D20;
+  }
+
+  .neo-shadow {
+    box-shadow: 4px 4px 0 #241D20;
+  }
+
+  .neo-shadow-lg {
+    box-shadow: 6px 6px 0 #241D20;
+  }
+
+  .neo-shadow-pink {
+    box-shadow: 4px 4px 0 #E9005B;
+  }
+}
+
+/* Reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

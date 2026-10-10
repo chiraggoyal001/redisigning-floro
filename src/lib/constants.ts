@@ -1,0 +1,225 @@
+import { Plan, FlowerGlossaryItem, FaqItem, ServiceablePincode } from "@/types";
+
+export const FLORO_PLANS: Plan[] = [
+  {
+    id: "value",
+    name: "Value Plan",
+    tagline: "Essential fresh flowers for heartfelt daily puja in compact homes.",
+    monthlyPrice: 450,
+    dailyWeightGrams: 50,
+    dailyWeightLabel: "Approx. 50 g daily packet",
+    dailyUnitDescription: "Delivered fresh every morning (5:30 AM – 7:30 AM), 365 days a year including Sundays and holidays.",
+    inclusions: [
+      "Fresh Marigold petals & whole heads (गेंदा)",
+      "Vibrant Red Hibiscus (गुड़हल)",
+      "Sacred Blue Aparajita / Butterfly Pea (अपराजिता)",
+      "Aromatic Jasmine / Mogra (चमेली)",
+      "Fresh Doobh / Durva grass stems (दूर्वा)",
+      "Holy Basil / Rama & Shyama Tulsi (तुलसी)",
+    ],
+    exclusions: [
+      "Hand-strung Marigold Garland (Mala)",
+      "Monday Belpatra special offering",
+    ],
+    seasonalNote: "Flower varieties may change by season and weather. We communicate substitutions transparently.",
+    accentColor: "#F2B72F",
+  },
+  {
+    id: "basic",
+    name: "Basic Plan",
+    tagline: "Our most balanced mix of traditional flowers, sacred leaves & Shiva Monday belpatra.",
+    monthlyPrice: 600,
+    dailyWeightGrams: 100,
+    dailyWeightLabel: "Approx. 100 g daily packet",
+    dailyUnitDescription: "Delivered fresh every morning (5:30 AM – 7:30 AM), 365 days a year including Sundays and holidays.",
+    inclusions: [
+      "Generous Marigold assortment (Yellow & Orange Genda)",
+      "Whole Red & Pink Hibiscus flowers",
+      "Doobh (Durva) Grass for Lord Ganesha",
+      "Holy Basil (Tulsi patra) for daily aarti",
+      "Butterfly Pea (Aparajita) or seasonal blooms",
+      "Shevanti (Chrysanthemum) or fragrant Jasmine",
+      "Fresh Belpatra (Three-leaf Bilva) included every Monday",
+    ],
+    exclusions: [
+      "Daily hand-strung Marigold Garland (Mala)",
+    ],
+    specialNote: "Includes fresh Belpatra every Monday for Lord Shiva puja.",
+    seasonalNote: "Flower varieties may change by season and weather. We communicate substitutions transparently.",
+    badge: "Recommended",
+    accentColor: "#E9005B",
+  },
+  {
+    id: "premium",
+    name: "Premium Plan",
+    tagline: "Abundant ritual flowers tailored to your mandir — choose between double flowers or daily mala.",
+    monthlyPrice: 900,
+    dailyWeightGrams: 200,
+    dailyWeightLabel: "Configurable daily packet",
+    dailyUnitDescription: "Delivered fresh every morning (5:30 AM – 7:30 AM), 365 days a year including Sundays and holidays.",
+    inclusions: [
+      "All Basic Plan flowers & sacred leaves in generous quantity",
+      "Fresh Belpatra every Monday",
+      "CHOICE: Two full 100 g Basic packets daily (200 g total) OR One 100 g packet + One fresh hand-strung Marigold Mala daily",
+      "Special festival variety upgrades during major auspicious dates",
+      "Priority early-morning delivery window",
+    ],
+    exclusions: [],
+    specialNote: "Configurable: 2x flower packets OR 1x flower packet + 1x fresh Marigold Mala daily.",
+    seasonalNote: "Flower varieties may change by season and weather. We communicate substitutions transparently.",
+    accentColor: "#B84E36",
+  },
+];
+
+export const FLOWER_GLOSSARY: FlowerGlossaryItem[] = [
+  {
+    id: "marigold",
+    nameEnglish: "Marigold",
+    nameHindi: "गेंदा (Genda)",
+    botanicalName: "Tagetes erecta",
+    sacredDeity: "Lord Ganesha & Lord Vishnu",
+    significance: "Symbolizes auspicious beginnings, divine surrender, and spiritual awakening. The vibrant orange and yellow petals radiate warmth and joy.",
+    availabilitySeason: "Year-round staple; varieties adjust between African and French marigold based on monsoon/winter.",
+    includedIn: ["Value", "Basic", "Premium"],
+  },
+  {
+    id: "hibiscus",
+    nameEnglish: "Red Hibiscus",
+    nameHindi: "गुड़हल (Gudhal)",
+    botanicalName: "Hibiscus rosa-sinensis",
+    sacredDeity: "Maa Durga, Goddess Kali & Lord Ganesha",
+    significance: "Represents pure devotion, raw cosmic energy (Shakti), and divine grace. Essential offering on Tuesdays and Fridays.",
+    availabilitySeason: "Available across all seasons; protected greenhouse sourcing during heavy rain.",
+    includedIn: ["Value", "Basic", "Premium"],
+  },
+  {
+    id: "aparajita",
+    nameEnglish: "Butterfly Pea",
+    nameHindi: "अपराजिता (Aparajita / Gokarna)",
+    botanicalName: "Clitoria ternatea",
+    sacredDeity: "Lord Shiva & Goddess Durga",
+    significance: "The deep cobalt hue symbolizes invincibility and deep meditative absorption. Dear to Lord Shiva and Shani Dev.",
+    availabilitySeason: "Peak during monsoon and post-monsoon; gracefully substituted with blue lotus or red marigold in peak dry summer.",
+    includedIn: ["Value", "Basic", "Premium"],
+  },
+  {
+    id: "jasmine",
+    nameEnglish: "Jasmine / Mogra",
+    nameHindi: "चमेली / मोगरा (Chameli)",
+    botanicalName: "Jasminum sambac",
+    sacredDeity: "Lord Shiva & Lord Hanuman",
+    significance: "Exudes pure divine fragrance, cooling tranquility, and inner purity. Brings calm peace to morning rituals.",
+    availabilitySeason: "Spring, summer, and early autumn peak; substituted with winter Shevanti in cold months.",
+    includedIn: ["Value", "Basic", "Premium"],
+  },
+  {
+    id: "tulsi",
+    nameEnglish: "Holy Basil",
+    nameHindi: "तुलसी (Tulsi)",
+    botanicalName: "Ocimum sanctum",
+    sacredDeity: "Lord Vishnu & Krishna",
+    significance: "The most sacred botanical in Indian household worship, revered as an avatar of Goddess Lakshmi. Essential for all Vaishnava rituals.",
+    availabilitySeason: "Freshly plucked daily year-round from dedicated organic herbal gardens.",
+    includedIn: ["Value", "Basic", "Premium"],
+  },
+  {
+    id: "durva",
+    nameEnglish: "Doobh / Durva Grass",
+    nameHindi: "दूर्वा घास (Durva)",
+    botanicalName: "Cynodon dactylon",
+    sacredDeity: "Lord Ganesha",
+    significance: "Three to five bladed sacred green shoot that pacifies all obstacles and cools spiritual thirst. Lord Ganesha's favorite daily offering.",
+    availabilitySeason: "Plucked fresh with tender roots daily year-round.",
+    includedIn: ["Value", "Basic", "Premium"],
+  },
+  {
+    id: "belpatra",
+    nameEnglish: "Belpatra / Bilva Leaves",
+    nameHindi: "बेलपत्र (Belpatra)",
+    botanicalName: "Aegle marmelos",
+    sacredDeity: "Lord Shiva",
+    significance: "Trifoliate leaves representing Brahma, Vishnu, and Mahesh, as well as the three eyes of Shiva. Bestows instant peace.",
+    availabilitySeason: "Specially sourced for every Monday delivery across Basic and Premium tiers.",
+    includedIn: ["Basic (Mondays)", "Premium (Mondays)"],
+  },
+];
+
+export const SERVICEABLE_PINCODES: ServiceablePincode[] = [
+  // Delhi NCR
+  { pincode: "110001", city: "New Delhi", state: "Delhi", hubName: "Connaught Place Hub", deliverySlot: "5:30 AM - 7:30 AM", isActive: true },
+  { pincode: "110016", city: "New Delhi", state: "Delhi", hubName: "Hauz Khas Hub", deliverySlot: "5:30 AM - 7:30 AM", isActive: true },
+  { pincode: "110024", city: "New Delhi", state: "Delhi", hubName: "Lajpat Nagar Hub", deliverySlot: "5:30 AM - 7:30 AM", isActive: true },
+  { pincode: "110085", city: "New Delhi", state: "Delhi", hubName: "Rohini Hub", deliverySlot: "5:30 AM - 7:30 AM", isActive: true },
+  { pincode: "122001", city: "Gurugram", state: "Haryana", hubName: "Gurugram Central Hub", deliverySlot: "5:30 AM - 7:30 AM", isActive: true },
+  { pincode: "122002", city: "Gurugram", state: "Haryana", hubName: "DLF Phase Hub", deliverySlot: "5:30 AM - 7:30 AM", isActive: true },
+  { pincode: "201301", city: "Noida", state: "Uttar Pradesh", hubName: "Noida Sector 18 Hub", deliverySlot: "5:30 AM - 7:30 AM", isActive: true },
+  
+  // Bengaluru
+  { pincode: "560001", city: "Bengaluru", state: "Karnataka", hubName: "MG Road Central Hub", deliverySlot: "5:30 AM - 7:30 AM", isActive: true },
+  { pincode: "560034", city: "Bengaluru", state: "Karnataka", hubName: "Koramangala Hub", deliverySlot: "5:30 AM - 7:30 AM", isActive: true },
+  { pincode: "560038", city: "Bengaluru", state: "Karnataka", hubName: "Indiranagar Hub", deliverySlot: "5:30 AM - 7:30 AM", isActive: true },
+  { pincode: "560076", city: "Bengaluru", state: "Karnataka", hubName: "Bannerghatta Hub", deliverySlot: "5:30 AM - 7:30 AM", isActive: true },
+  { pincode: "560100", city: "Bengaluru", state: "Karnataka", hubName: "Electronic City Hub", deliverySlot: "5:30 AM - 7:30 AM", isActive: true },
+
+  // Mumbai & Pune
+  { pincode: "400001", city: "Mumbai", state: "Maharashtra", hubName: "Fort South Mumbai Hub", deliverySlot: "5:30 AM - 7:30 AM", isActive: true },
+  { pincode: "400050", city: "Mumbai", state: "Maharashtra", hubName: "Bandra West Hub", deliverySlot: "5:30 AM - 7:30 AM", isActive: true },
+  { pincode: "400053", city: "Mumbai", state: "Maharashtra", hubName: "Andheri West Hub", deliverySlot: "5:30 AM - 7:30 AM", isActive: true },
+  { pincode: "411001", city: "Pune", state: "Maharashtra", hubName: "Pune Camp Hub", deliverySlot: "5:30 AM - 7:30 AM", isActive: true },
+  { pincode: "411004", city: "Pune", state: "Maharashtra", hubName: "Deccan Gymkhana Hub", deliverySlot: "5:30 AM - 7:30 AM", isActive: true },
+
+  // Hyderabad & Chennai
+  { pincode: "500001", city: "Hyderabad", state: "Telangana", hubName: "Abids Central Hub", deliverySlot: "5:30 AM - 7:30 AM", isActive: true },
+  { pincode: "500034", city: "Hyderabad", state: "Telangana", hubName: "Banjara Hills Hub", deliverySlot: "5:30 AM - 7:30 AM", isActive: true },
+  { pincode: "600001", city: "Chennai", state: "Tamil Nadu", hubName: "George Town Hub", deliverySlot: "5:30 AM - 7:30 AM", isActive: true },
+  { pincode: "600004", city: "Chennai", state: "Tamil Nadu", hubName: "Mylapore Mandir Hub", deliverySlot: "5:30 AM - 7:30 AM", isActive: true },
+
+  // Varanasi & Jaipur
+  { pincode: "221001", city: "Varanasi", state: "Uttar Pradesh", hubName: "Kashi Vishwanath Hub", deliverySlot: "5:30 AM - 7:30 AM", isActive: true },
+  { pincode: "302001", city: "Jaipur", state: "Rajasthan", hubName: "Pink City Central Hub", deliverySlot: "5:30 AM - 7:30 AM", isActive: true },
+];
+
+export const FAQS: FaqItem[] = [
+  {
+    id: "f1",
+    category: "subscriptions",
+    question: "Are the weights mentioned per day or for the whole month?",
+    answer: "Weights describe the daily fresh packet delivered to your door each morning, not the monthly total. For instance, the Basic Plan delivers an approximate 100 g freshly selected packet every single morning (~3 kg across the month).",
+  },
+  {
+    id: "f2",
+    category: "delivery",
+    question: "Do you deliver on Sundays and public holidays?",
+    answer: "Yes, daily worship never pauses and neither does Floro. We deliver 365 days a year without exception, including Sundays, Diwali, Holi, and national holidays between 5:30 AM and 7:30 AM.",
+  },
+  {
+    id: "f3",
+    category: "subscriptions",
+    question: "What is the difference between the two Premium Plan configurations?",
+    answer: "The Premium Plan (₹900/month) gives you the choice between: (A) Two full Basic flower packets daily (~200 g total daily) — ideal for larger home mandirs or joint families; OR (B) One full Basic packet (~100 g) accompanied by one hand-strung, fresh Marigold Mala (garland) daily.",
+  },
+  {
+    id: "f4",
+    category: "seasonality",
+    question: "Why do flower varieties change occasionally?",
+    answer: "Devotional flowers depend on seasonal bloom cycles and local weather. While Marigold, Hibiscus, Tulsi, and Durva remain staple inclusions, flowers like Jasmine or Aparajita may be substituted with seasonal blooms like fragrant Shevanti when weather impacts harvest quality. We communicate substitutions transparently.",
+  },
+  {
+    id: "f5",
+    category: "account",
+    question: "Can I pause my subscription when going on vacation?",
+    answer: "Yes. From your My Account dashboard, you can pause your daily deliveries for specific dates with just 24 hours advance notice. Your subscription validity is automatically extended by the paused days.",
+  },
+  {
+    id: "f6",
+    category: "delivery",
+    question: "How do I check if Floro delivers to my home?",
+    answer: "Simply enter your 6-digit postal PIN code in our live Serviceability Checker. If your locality is active, you will see instant confirmation with the local hub details and your morning delivery window.",
+  },
+  {
+    id: "f7",
+    category: "payments",
+    question: "What payment methods are supported and how does renewal work?",
+    answer: "We support all major Indian UPI applications (Google Pay, PhonePe, Paytm, BHIM), Debit/Credit Cards, and Net Banking. Subscriptions are billed on a 30-day monthly cycle with advance notification prior to renewal.",
+  },
+];
