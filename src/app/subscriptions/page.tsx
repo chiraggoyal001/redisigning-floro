@@ -46,8 +46,11 @@ export default function SubscriptionsPage() {
 
         <PlanComparisonTable />
 
+        {/* Folk-art Separator Band Between Table and Cards */}
+        <GarlandDivider className="py-6" />
+
         {/* 3 Pillar Guarantees */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-4 neo-card-group group/cards">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 neo-card-group group/cards">
           <NeoCard variant="white" hasShadow={true} padding="md" className="space-y-2">
             <div className="p-2 rounded bg-floro-canvas border border-floro-border w-fit text-floro-accent">
               <Calendar className="w-5 h-5" />
@@ -84,8 +87,6 @@ export default function SubscriptionsPage() {
             </p>
           </NeoCard>
         </div>
-
-        <GarlandDivider className="pt-6" />
       </section>
     </main>
   );
