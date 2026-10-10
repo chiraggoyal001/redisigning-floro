@@ -37,7 +37,7 @@ export const OrderReviewStep: React.FC<OrderReviewStepProps> = ({
         <h2 className="text-xl sm:text-2xl font-bold font-display text-floro-primary">
           Step 4: Review Subscription & Schedule
         </h2>
-        <p className="text-xs text-floro-secondary">
+        <p className="text-sm text-floro-secondary">
           Confirm your daily offering details before initiating payment.
         </p>
       </div>
@@ -46,14 +46,14 @@ export const OrderReviewStep: React.FC<OrderReviewStepProps> = ({
       <NeoCard variant="white" hasShadow={true} padding="md" className="space-y-4">
         <div className="flex items-start justify-between border-b-2 border-floro-border/20 pb-3">
           <div>
-            <span className="text-[11px] font-mono font-bold uppercase tracking-wider text-floro-accent">
+            <span className="text-xs font-mono font-bold uppercase tracking-wider text-floro-accent">
               Selected Subscription
             </span>
             <h3 className="text-xl font-bold font-display text-floro-primary">
               {plan.name}
             </h3>
             {plan.id === "premium" && (
-              <p className="text-xs font-bold text-floro-terracotta mt-0.5">
+              <p className="text-sm font-bold text-floro-terracotta mt-0.5">
                 {premiumOption === "two_packets"
                   ? "Config: 2x Basic Flower Packets (~200 g Daily)"
                   : "Config: 1x Basic Packet + 1x Fresh Marigold Mala Daily"}
@@ -64,67 +64,67 @@ export const OrderReviewStep: React.FC<OrderReviewStepProps> = ({
             <span className="text-2xl font-black font-display text-floro-primary">
               ₹{plan.monthlyPrice}
             </span>
-            <span className="block text-[11px] text-floro-muted">per month</span>
+            <span className="block text-xs text-floro-muted">per month</span>
           </div>
         </div>
 
         {/* Schedule & Inclusions */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">
           <div className="space-y-1">
-            <span className="font-bold text-floro-muted uppercase font-mono text-[10px]">
+            <span className="font-bold text-floro-muted uppercase font-mono text-xs">
               Daily Packet Weight:
             </span>
             <p className="font-bold text-floro-primary">
               {plan.id === "premium"
                 ? premiumOption === "two_packets"
-                  ? "~200 g daily (2 packets)"
-                  : "~100 g packet + 1x hand-strung mala"
+                ? "~200 g daily (2 packets)"
+                : "~100 g packet + 1x hand-strung mala"
                 : plan.dailyWeightLabel}
             </p>
           </div>
 
           <div className="space-y-1">
-            <span className="font-bold text-floro-muted uppercase font-mono text-[10px]">
+            <span className="font-bold text-floro-muted uppercase font-mono text-xs">
               Deliveries Commence:
             </span>
-            <p className="font-bold text-floro-accent flex items-center gap-1">
-              <Calendar className="w-3.5 h-3.5" />
+            <p className="font-bold text-floro-accent flex items-center gap-1.5">
+              <Calendar className="w-4 h-4" />
               {formattedTomorrow}
             </p>
           </div>
         </div>
 
-        <div className="p-3 rounded bg-floro-canvas border border-floro-border text-xs text-floro-secondary space-y-1">
+        <div className="p-3.5 rounded bg-floro-canvas border border-floro-border text-sm text-floro-secondary space-y-1">
           <p className="font-bold text-floro-primary flex items-center gap-1.5">
-            <Sparkles className="w-3.5 h-3.5 text-floro-marigold" />
+            <Sparkles className="w-4 h-4 text-floro-marigold" />
             365-Day Daily Morning Fulfillment
           </p>
-          <p className="text-[11px] leading-relaxed">
+          <p className="text-xs text-floro-secondary leading-relaxed">
             Delivered fresh every morning between 5:30 AM and 7:30 AM, including Sundays and public holidays.
           </p>
         </div>
 
-        <div className="text-[11px] text-floro-muted italic border-t border-floro-border/20 pt-2">
+        <div className="text-xs text-floro-muted italic border-t border-floro-border/20 pt-2">
           {plan.seasonalNote}
         </div>
       </NeoCard>
 
       {/* Address Card */}
-      <NeoCard variant="soft" padding="md" className="space-y-2 text-xs">
+      <NeoCard variant="soft" padding="md" className="space-y-2 text-sm">
         <div className="flex items-center justify-between">
-          <span className="font-bold font-mono text-[11px] uppercase tracking-wider text-floro-muted flex items-center gap-1">
-            <MapPin className="w-3.5 h-3.5 text-floro-accent" />
+          <span className="font-bold font-mono text-xs uppercase tracking-wider text-floro-muted flex items-center gap-1">
+            <MapPin className="w-4 h-4 text-floro-accent" />
             Delivery Destination:
           </span>
           <button
             type="button"
             onClick={onBack}
-            className="font-bold text-floro-accent hover:underline text-[11px]"
+            className="font-bold text-floro-accent hover:underline text-xs"
           >
             Edit Address
           </button>
         </div>
-        <p className="font-bold text-floro-primary text-sm">
+        <p className="font-bold text-floro-primary text-base">
           {address.flatNo}, {address.street}
         </p>
         <p className="text-floro-secondary">
@@ -132,7 +132,7 @@ export const OrderReviewStep: React.FC<OrderReviewStepProps> = ({
           {address.city}, {address.state} — {address.pincode}
         </p>
         {address.deliveryInstructions && (
-          <p className="text-floro-muted pt-1">
+          <p className="text-floro-muted pt-1 text-xs sm:text-sm">
             <span className="font-bold text-floro-primary">Instructions:</span> &ldquo;
             {address.deliveryInstructions}&rdquo;
           </p>

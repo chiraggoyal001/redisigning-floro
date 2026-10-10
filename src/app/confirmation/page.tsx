@@ -69,17 +69,17 @@ function ConfirmationContent() {
         </div>
 
         {order && (
-          <div className="space-y-4 text-xs">
+          <div className="space-y-4 text-sm">
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div className="space-y-1">
-                <span className="font-mono font-bold uppercase text-[10px] text-floro-muted">
+                <span className="font-mono font-bold uppercase text-xs text-floro-muted">
                   Active Plan:
                 </span>
-                <p className="font-bold text-sm text-floro-primary uppercase">
+                <p className="font-bold text-base text-floro-primary uppercase">
                   {order.planTier} Plan (₹{order.amount}/mo)
                 </p>
                 {order.premiumOption && (
-                  <p className="text-floro-terracotta font-semibold">
+                  <p className="text-floro-terracotta font-semibold text-sm">
                     {order.premiumOption === "two_packets"
                       ? "2x Basic Packets (~200 g Daily)"
                       : "1x Basic Packet + 1x Fresh Mala"}
@@ -88,21 +88,21 @@ function ConfirmationContent() {
               </div>
 
               <div className="space-y-1">
-                <span className="font-mono font-bold uppercase text-[10px] text-floro-muted">
+                <span className="font-mono font-bold uppercase text-xs text-floro-muted">
                   Payment Status:
                 </span>
-                <p className="font-bold text-sm text-floro-success">
+                <p className="font-bold text-base text-floro-success">
                   Paid via {order.paymentMethod.toUpperCase()} (₹{order.amount}.00)
                 </p>
               </div>
             </div>
 
             <div className="pt-2 border-t border-floro-border/20 space-y-1">
-              <span className="font-mono font-bold uppercase text-[10px] text-floro-muted flex items-center gap-1">
-                <MapPin className="w-3.5 h-3.5 text-floro-accent" />
+              <span className="font-mono font-bold uppercase text-xs text-floro-muted flex items-center gap-1.5">
+                <MapPin className="w-4 h-4 text-floro-accent" />
                 Delivery Destination:
               </span>
-              <p className="font-bold text-floro-primary">
+              <p className="font-bold text-floro-primary text-base">
                 {order.address.flatNo}, {order.address.street}
               </p>
               <p className="text-floro-secondary">

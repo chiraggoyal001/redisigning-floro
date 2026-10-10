@@ -50,8 +50,8 @@ export const FlowerCareSection: React.FC = () => {
                   <Recycle className="w-5 h-5" />
                 </div>
                 <div>
-                  <h4 className="text-sm font-bold text-floro-primary">Respectful Nirmalya Care</h4>
-                  <p className="text-xs text-floro-secondary mt-0.5">
+                  <h4 className="text-base font-bold text-floro-primary">Respectful Nirmalya Care</h4>
+                  <p className="text-sm text-floro-secondary mt-0.5 leading-relaxed">
                     After daily worship, return offering flowers (nirmalya) to plant soil or garden compost rather than general waste.
                   </p>
                 </div>
@@ -87,12 +87,12 @@ export const FlowerCareSection: React.FC = () => {
 
               <div className="pt-4 border-t-2 border-floro-border/30 flex items-center justify-between">
                 <div>
-                  <p className="text-xs font-bold text-floro-primary">Floro Cultural Commitment</p>
-                  <p className="text-[11px] text-floro-muted">Devotional integrity in every daily packet</p>
+                  <p className="text-sm font-bold text-floro-primary">Floro Cultural Commitment</p>
+                  <p className="text-xs text-floro-muted">Devotional integrity in every daily packet</p>
                 </div>
                 <Link
                   href="/rituals-and-festivals"
-                  className="text-xs font-bold font-mono text-floro-accent hover:underline"
+                  className="text-sm font-bold font-mono text-floro-accent hover:underline"
                 >
                   Read Festival Guides →
                 </Link>

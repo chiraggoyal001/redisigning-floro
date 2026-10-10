@@ -172,10 +172,10 @@ export default function RitualsAndFestivalsPage() {
                     className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
                     loading="lazy"
                   />
-                  <div className="absolute top-2.5 left-2.5 px-2.5 py-0.5 rounded bg-floro-surface/95 border border-floro-border text-[11px] font-mono font-bold text-floro-accent uppercase shadow-[1px_1px_0_#241D20]">
+                  <div className="absolute top-2.5 left-2.5 px-2.5 py-0.5 rounded bg-floro-surface/95 border border-floro-border text-xs font-mono font-bold text-floro-accent uppercase shadow-[1px_1px_0_#241D20]">
                     {cad.day}
                   </div>
-                  <div className="absolute bottom-2.5 right-2.5 px-2 py-0.5 rounded bg-black/75 backdrop-blur-xs text-white text-[10px] font-mono">
+                  <div className="absolute bottom-2.5 right-2.5 px-2.5 py-0.5 rounded bg-black/75 backdrop-blur-xs text-white text-xs font-mono">
                     Mithila Art
                   </div>
                 </div>
@@ -183,15 +183,15 @@ export default function RitualsAndFestivalsPage() {
                 <div className="p-5 sm:p-6 flex-1 flex flex-col justify-between space-y-3">
                   <div className="space-y-2">
                     <div className="flex items-center justify-between border-b border-floro-border/20 pb-2">
-                      <h3 className="text-base font-bold font-display text-floro-primary">
+                      <h3 className="text-lg font-bold font-display text-floro-primary">
                         {cad.deity}
                       </h3>
                     </div>
                     <div>
-                      <h4 className="text-xs font-bold text-floro-accent">
+                      <h4 className="text-sm font-bold text-floro-accent">
                         🌸 {cad.flower}
                       </h4>
-                      <p className="text-xs text-floro-secondary mt-1.5 leading-relaxed">
+                      <p className="text-sm text-floro-secondary mt-1.5 leading-relaxed">
                         {cad.desc}
                       </p>
                     </div>
@@ -213,7 +213,7 @@ export default function RitualsAndFestivalsPage() {
             <h2 className="text-2xl sm:text-3xl font-bold font-display text-floro-primary">
               Major Festival Ritual Traditions
             </h2>
-            <p className="text-xs sm:text-sm text-floro-secondary">
+            <p className="text-sm sm:text-base text-floro-secondary">
               Elevated floral offerings and sacred deity customs across India&apos;s grandest celebrations.
             </p>
           </div>
@@ -234,23 +234,23 @@ export default function RitualsAndFestivalsPage() {
                     className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
                     loading="lazy"
                   />
-                  <div className="absolute top-2.5 left-2.5 px-2 py-0.5 rounded bg-floro-surface/95 border border-floro-border text-[10px] font-mono font-bold text-floro-primary shadow-[1px_1px_0_#241D20]">
+                  <div className="absolute top-2.5 left-2.5 px-2.5 py-0.5 rounded bg-floro-surface/95 border border-floro-border text-xs font-mono font-bold text-floro-primary shadow-[1px_1px_0_#241D20]">
                     {fest.date}
                   </div>
-                  <div className="absolute bottom-2.5 right-2.5 px-2 py-0.5 rounded bg-black/75 backdrop-blur-xs text-white text-[10px] font-mono">
+                  <div className="absolute bottom-2.5 right-2.5 px-2.5 py-0.5 rounded bg-black/75 backdrop-blur-xs text-white text-xs font-mono">
                     Mithila Art
                   </div>
                 </div>
 
                 <div className="p-4 sm:p-5 flex-1 flex flex-col justify-between space-y-2">
                   <div className="space-y-1.5">
-                    <h3 className="text-base font-bold font-display text-floro-primary">
+                    <h3 className="text-lg font-bold font-display text-floro-primary">
                       {fest.title}
                     </h3>
-                    <p className="text-xs font-bold text-floro-accent">
+                    <p className="text-sm font-bold text-floro-accent">
                       🌺 {fest.flower}
                     </p>
-                    <p className="text-xs text-floro-secondary leading-relaxed">
+                    <p className="text-sm text-floro-secondary leading-relaxed">
                       {fest.desc}
                     </p>
                   </div>

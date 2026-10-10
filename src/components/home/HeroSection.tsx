@@ -105,8 +105,8 @@ export const HeroSection: React.FC = () => {
                   <div className="flex items-center gap-2">
                     <LotusIcon size={24} />
                     <div className="text-left">
-                      <p className="text-xs font-bold text-floro-primary">Daily Morning Puja Packet</p>
-                      <p className="text-[11px] text-floro-muted">Hand-inspected marigolds, hibiscus & tulsi</p>
+                      <p className="text-sm font-bold text-floro-primary">Daily Morning Puja Packet</p>
+                      <p className="text-xs text-floro-muted">Hand-inspected marigolds, hibiscus & tulsi</p>
                     </div>
                   </div>
                   <span className="text-xs font-mono font-bold px-2 py-0.5 bg-floro-marigold rounded border border-floro-border">
@@ -117,7 +117,7 @@ export const HeroSection: React.FC = () => {
 
               {/* Offset decorative stamp */}
               <div className="hidden sm:flex absolute -top-4 -right-4 p-2.5 rounded-full bg-floro-accent-soft border-2 border-floro-border shadow-neo items-center justify-center rotate-6">
-                <span className="text-[11px] font-mono font-bold text-floro-accent tracking-tighter uppercase">
+                <span className="text-xs font-mono font-bold text-floro-accent tracking-normal uppercase">
                   365 Days
                 </span>
               </div>

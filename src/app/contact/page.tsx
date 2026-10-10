@@ -55,9 +55,9 @@ export default function ContactPage() {
                   <Mail className="w-5 h-5" />
                 </div>
                 <div>
-                  <h4 className="text-sm font-bold text-floro-primary">Email Support</h4>
-                  <p className="text-xs text-floro-secondary mt-0.5">care@floro.in</p>
-                  <p className="text-[11px] text-floro-muted mt-0.5">Average reply time: under 4 hours</p>
+                  <h4 className="text-base font-bold text-floro-primary">Email Support</h4>
+                  <p className="text-sm font-semibold text-floro-secondary mt-0.5">care@floro.in</p>
+                  <p className="text-xs text-floro-muted mt-0.5">Average reply time: under 4 hours</p>
                 </div>
               </NeoCard>
 
@@ -66,9 +66,9 @@ export default function ContactPage() {
                   <Phone className="w-5 h-5" />
                 </div>
                 <div>
-                  <h4 className="text-sm font-bold text-floro-primary">Helpline & WhatsApp</h4>
-                  <p className="text-xs text-floro-secondary mt-0.5">+91 98765 43210</p>
-                  <p className="text-[11px] text-floro-muted mt-0.5">Available for active subscriber assistance</p>
+                  <h4 className="text-base font-bold text-floro-primary">Helpline & WhatsApp</h4>
+                  <p className="text-sm font-semibold text-floro-secondary mt-0.5">+91 98765 43210</p>
+                  <p className="text-xs text-floro-muted mt-0.5">Available for active subscriber assistance</p>
                 </div>
               </NeoCard>
 
@@ -77,9 +77,9 @@ export default function ContactPage() {
                   <Clock className="w-5 h-5" />
                 </div>
                 <div>
-                  <h4 className="text-sm font-bold text-floro-primary">Morning Operations Hours</h4>
-                  <p className="text-xs text-floro-secondary mt-0.5">5:00 AM – 8:00 PM IST</p>
-                  <p className="text-[11px] text-floro-muted mt-0.5">365 days a year including Sundays & holidays</p>
+                  <h4 className="text-base font-bold text-floro-primary">Morning Operations Hours</h4>
+                  <p className="text-sm font-semibold text-floro-secondary mt-0.5">5:00 AM – 8:00 PM IST</p>
+                  <p className="text-xs text-floro-muted mt-0.5">365 days a year including Sundays & holidays</p>
                 </div>
               </NeoCard>
             </div>

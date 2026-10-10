@@ -39,7 +39,7 @@ export default function FlowersAndSourcingPage() {
               <Leaf className="w-5 h-5" />
             </div>
             <h3 className="text-base font-bold text-floro-primary">Pre-Dawn Harvest</h3>
-            <p className="text-xs text-floro-secondary leading-relaxed">
+            <p className="text-sm text-floro-secondary leading-relaxed">
               Harvested in pre-dawn hours while petals hold overnight natural dew. Inspected immediately to remove bruised or wilted heads.
             </p>
           </NeoCard>
@@ -49,7 +49,7 @@ export default function FlowersAndSourcingPage() {
               <Droplets className="w-5 h-5" />
             </div>
             <h3 className="text-base font-bold text-floro-primary">No Harmful Sprays</h3>
-            <p className="text-xs text-floro-secondary leading-relaxed">
+            <p className="text-sm text-floro-secondary leading-relaxed">
               Grown for devotional worship, not ornamental vase display. Free from harsh artificial chemical glazes or artificial fragrances.
             </p>
           </NeoCard>
@@ -59,7 +59,7 @@ export default function FlowersAndSourcingPage() {
               <AlertCircle className="w-5 h-5" />
             </div>
             <h3 className="text-base font-bold text-floro-primary">Transparent Substitution</h3>
-            <p className="text-xs text-floro-secondary leading-relaxed">
+            <p className="text-sm text-floro-secondary leading-relaxed">
               When extreme monsoon or winter rains impact specific blooms, we substitute with equivalent traditional flowers and tell you upfront.
             </p>
           </NeoCard>
@@ -72,7 +72,7 @@ export default function FlowersAndSourcingPage() {
           <h2 className="text-2xl sm:text-3xl font-bold font-display text-floro-primary">
             Botanical Flower & Sacred Leaf Glossary
           </h2>
-          <p className="text-xs sm:text-sm text-floro-secondary">
+          <p className="text-sm sm:text-base text-floro-secondary">
             Bilingual names, botanical classifications, and traditional deity offerings.
           </p>
         </div>
@@ -94,7 +94,7 @@ export default function FlowersAndSourcingPage() {
                     className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
                     loading="lazy"
                   />
-                  <div className="absolute top-2.5 right-2.5 px-2 py-0.5 rounded bg-floro-surface/95 border border-floro-border text-[10px] font-mono font-bold text-floro-primary shadow-[1px_1px_0_#241D20]">
+                  <div className="absolute top-2.5 right-2.5 px-2.5 py-0.5 rounded bg-floro-surface/95 border border-floro-border text-xs font-mono font-bold text-floro-primary shadow-[1px_1px_0_#241D20]">
                     {flower.botanicalName}
                   </div>
                 </div>
@@ -107,13 +107,13 @@ export default function FlowersAndSourcingPage() {
                       <h3 className="text-xl font-bold font-display text-floro-primary">
                         {flower.nameEnglish}
                       </h3>
-                      <p className="text-sm font-bold text-floro-accent">
+                      <p className="text-base font-bold text-floro-accent">
                         {flower.nameHindi}
                       </p>
                     </div>
                   </div>
 
-                  <div className="space-y-2 text-xs">
+                  <div className="space-y-2.5 text-sm">
                     <div>
                       <span className="font-bold text-floro-primary">Sacred Deity: </span>
                       <span className="text-floro-secondary">{flower.sacredDeity}</span>
@@ -123,18 +123,18 @@ export default function FlowersAndSourcingPage() {
                       {flower.significance}
                     </p>
 
-                    <div className="pt-2 p-2.5 rounded bg-floro-canvas border border-floro-border/40 text-[11px] text-floro-secondary">
+                    <div className="pt-2 p-2.5 rounded bg-floro-canvas border border-floro-border/40 text-xs sm:text-sm text-floro-secondary">
                       <span className="font-bold text-floro-terracotta">Seasonality: </span>
                       {flower.availabilitySeason}
                     </div>
                   </div>
                 </div>
 
-                <div className="pt-3 border-t border-floro-border/20 flex flex-wrap gap-1">
+                <div className="pt-3 border-t border-floro-border/20 flex flex-wrap gap-1.5">
                   {flower.includedIn.map((tier, idx) => (
                     <span
                       key={idx}
-                      className="px-2 py-0.5 rounded text-[10px] font-mono font-bold bg-floro-surface-soft border border-floro-border text-floro-primary"
+                      className="px-2.5 py-0.5 rounded text-xs font-mono font-bold bg-floro-surface-soft border border-floro-border text-floro-primary"
                     >
                       {tier}
                     </span>

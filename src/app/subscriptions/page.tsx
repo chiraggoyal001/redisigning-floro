@@ -39,7 +39,7 @@ export default function SubscriptionsPage() {
           <h2 className="text-2xl sm:text-3xl font-bold font-display text-floro-primary">
             Detailed Plan Comparison Matrix
           </h2>
-          <p className="text-xs sm:text-sm text-floro-secondary">
+          <p className="text-sm sm:text-base text-floro-secondary">
             Inspect exact inclusions, packet weights, and special day offerings across each tier.
           </p>
         </div>
@@ -52,10 +52,10 @@ export default function SubscriptionsPage() {
             <div className="p-2 rounded bg-floro-canvas border border-floro-border w-fit text-floro-accent">
               <Calendar className="w-5 h-5" />
             </div>
-            <h3 className="text-sm font-bold text-floro-primary">
+            <h3 className="text-base font-bold text-floro-primary">
               365-Day Daily Fulfillment
             </h3>
-            <p className="text-xs text-floro-secondary leading-relaxed">
+            <p className="text-sm text-floro-secondary leading-relaxed">
               We never take days off. Delivery happens reliably every single morning, including Sundays, Diwali, Navratri, and national holidays.
             </p>
           </NeoCard>
@@ -64,10 +64,10 @@ export default function SubscriptionsPage() {
             <div className="p-2 rounded bg-floro-canvas border border-floro-border w-fit text-floro-marigold">
               <CloudSun className="w-5 h-5" />
             </div>
-            <h3 className="text-sm font-bold text-floro-primary">
+            <h3 className="text-base font-bold text-floro-primary">
               Transparent Seasonal Policy
             </h3>
-            <p className="text-xs text-floro-secondary leading-relaxed">
+            <p className="text-sm text-floro-secondary leading-relaxed">
               Flower varieties adjust naturally with seasonal crops. Any substitute is clean, respectful, fresh, and communicated in advance.
             </p>
           </NeoCard>
@@ -76,10 +76,10 @@ export default function SubscriptionsPage() {
             <div className="p-2 rounded bg-floro-canvas border border-floro-border w-fit text-floro-success">
               <ShieldCheck className="w-5 h-5" />
             </div>
-            <h3 className="text-sm font-bold text-floro-primary">
+            <h3 className="text-base font-bold text-floro-primary">
               Vacation Mode Flexibility
             </h3>
-            <p className="text-xs text-floro-secondary leading-relaxed">
+            <p className="text-sm text-floro-secondary leading-relaxed">
               Heading out of town? Simply pause your subscription from your account dashboard with 24 hours notice. Your days are saved.
             </p>
           </NeoCard>

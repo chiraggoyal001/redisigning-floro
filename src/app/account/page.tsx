@@ -143,7 +143,7 @@ export default function AccountPage() {
                     {subscription.planTier} Plan
                   </h2>
                   {subscription.premiumOption && (
-                    <p className="text-xs font-bold text-floro-terracotta mt-0.5">
+                    <p className="text-sm font-bold text-floro-terracotta mt-0.5">
                       {subscription.premiumOption === "two_packets"
                         ? "2x Basic Packets (~200 g Daily)"
                         : "1x Basic Packet + 1x Fresh Mala"}
@@ -155,38 +155,38 @@ export default function AccountPage() {
                   <span className="text-2xl font-black font-display text-floro-primary">
                     ₹{subscription.monthlyPrice}
                   </span>
-                  <span className="block text-[11px] text-floro-muted">/ month</span>
+                  <span className="block text-xs text-floro-muted">/ month</span>
                 </div>
               </div>
 
               {/* Schedule Details */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">
                 <div className="p-3.5 rounded bg-floro-canvas border border-floro-border space-y-1">
-                  <span className="font-bold text-floro-muted font-mono uppercase text-[10px] flex items-center gap-1">
-                    <Clock className="w-3.5 h-3.5 text-floro-accent" />
+                  <span className="font-bold text-floro-muted font-mono uppercase text-xs flex items-center gap-1">
+                    <Clock className="w-4 h-4 text-floro-accent" />
                     Delivery Window
                   </span>
-                  <p className="font-bold text-sm text-floro-primary">
+                  <p className="font-bold text-sm sm:text-base text-floro-primary">
                     5:30 AM – 7:30 AM
                   </p>
-                  <p className="text-[11px] text-floro-secondary">
+                  <p className="text-xs text-floro-secondary">
                     365 days a year including Sundays & holidays
                   </p>
                 </div>
 
                 <div className="p-3.5 rounded bg-floro-canvas border border-floro-border space-y-1">
-                  <span className="font-bold text-floro-muted font-mono uppercase text-[10px] flex items-center gap-1">
-                    <Calendar className="w-3.5 h-3.5 text-floro-marigold" />
+                  <span className="font-bold text-floro-muted font-mono uppercase text-xs flex items-center gap-1">
+                    <Calendar className="w-4 h-4 text-floro-marigold" />
                     Next Scheduled Delivery
                   </span>
-                  <p className="font-bold text-sm text-floro-primary">
+                  <p className="font-bold text-sm sm:text-base text-floro-primary">
                     {isPaused
                       ? `Paused until ${subscription.pausedUntil}`
                       : isCancelled
                       ? "None (Cancelled)"
                       : "Tomorrow Morning"}
                   </p>
-                  <p className="text-[11px] text-floro-secondary">
+                  <p className="text-xs text-floro-secondary">
                     {isPaused ? "Tap Resume anytime" : "Hand-selected fresh blooms"}
                   </p>
                 </div>
@@ -286,13 +286,13 @@ export default function AccountPage() {
                   orders.map((ord) => (
                     <div
                       key={ord.id}
-                      className="p-3 rounded bg-floro-canvas border border-floro-border/40 text-xs flex items-center justify-between"
+                      className="p-3.5 rounded bg-floro-canvas border border-floro-border/40 text-sm flex items-center justify-between"
                     >
                       <div>
                         <p className="font-mono font-bold text-floro-primary">
                           {ord.orderReference}
                         </p>
-                        <p className="text-[11px] text-floro-muted">
+                        <p className="text-xs text-floro-muted">
                           {new Date(ord.createdAt).toLocaleDateString("en-IN", {
                             day: "numeric",
                             month: "short",
@@ -302,16 +302,16 @@ export default function AccountPage() {
                       </div>
                       <div className="text-right">
                         <span className="font-bold text-floro-primary">₹{ord.amount}</span>
-                        <span className="block text-[10px] font-bold text-floro-success uppercase">
+                        <span className="block text-xs font-bold text-floro-success uppercase">
                           ● {ord.paymentStatus}
                         </span>
                       </div>
                     </div>
                   ))
                 ) : (
-                  <div className="p-3 rounded bg-floro-canvas text-xs text-floro-secondary">
+                  <div className="p-3.5 rounded bg-floro-canvas text-sm text-floro-secondary">
                     <p className="font-mono font-bold">FLR-782910</p>
-                    <p className="text-[11px] text-floro-muted">Active Monthly Subscription (₹{subscription.monthlyPrice})</p>
+                    <p className="text-xs text-floro-muted">Active Monthly Subscription (₹{subscription.monthlyPrice})</p>
                   </div>
                 )}
               </div>

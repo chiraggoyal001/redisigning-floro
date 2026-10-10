@@ -64,7 +64,7 @@ export const HowItWorksTeaser: React.FC = () => {
                 <h3 className="text-lg font-bold font-display text-floro-primary">
                   {st.title}
                 </h3>
-                <p className="text-xs text-floro-secondary leading-relaxed">
+                <p className="text-sm text-floro-secondary leading-relaxed">
                   {st.desc}
                 </p>
               </div>

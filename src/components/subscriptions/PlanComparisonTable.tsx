@@ -86,24 +86,24 @@ export const PlanComparisonTable: React.FC = () => {
       <table className="w-full text-left border-collapse min-w-[640px]">
         <thead>
           <tr className="border-b-2 border-floro-border bg-floro-canvas">
-            <th className="p-4 sm:p-5 text-sm font-bold font-display text-floro-primary w-1/4">
+            <th className="p-4 sm:p-5 text-sm sm:text-base font-bold font-display text-floro-primary w-1/4">
               Feature & Offerings
             </th>
-            <th className="p-4 sm:p-5 text-sm font-bold font-display text-floro-primary w-1/4">
+            <th className="p-4 sm:p-5 text-sm sm:text-base font-bold font-display text-floro-primary w-1/4">
               Value Plan
-              <span className="block text-xs font-mono font-normal text-floro-muted">₹450/mo</span>
+              <span className="block text-xs sm:text-sm font-mono font-medium text-floro-muted">₹450/mo</span>
             </th>
-            <th className="p-4 sm:p-5 text-sm font-bold font-display text-floro-accent w-1/4 bg-floro-accent-soft/40">
+            <th className="p-4 sm:p-5 text-sm sm:text-base font-bold font-display text-floro-accent w-1/4 bg-floro-accent-soft/40">
               Basic Plan (Recommended)
-              <span className="block text-xs font-mono font-normal text-floro-primary">₹600/mo</span>
+              <span className="block text-xs sm:text-sm font-mono font-bold text-floro-primary">₹600/mo</span>
             </th>
-            <th className="p-4 sm:p-5 text-sm font-bold font-display text-floro-primary w-1/4">
+            <th className="p-4 sm:p-5 text-sm sm:text-base font-bold font-display text-floro-primary w-1/4">
               Premium Plan
-              <span className="block text-xs font-mono font-normal text-floro-muted">₹900/mo</span>
+              <span className="block text-xs sm:text-sm font-mono font-medium text-floro-muted">₹900/mo</span>
             </th>
           </tr>
         </thead>
-        <tbody className="divide-y-2 divide-floro-border/20 text-xs sm:text-sm">
+        <tbody className="divide-y-2 divide-floro-border/20 text-sm">
           {rows.map((row, idx) => (
             <tr
               key={idx}
@@ -114,7 +114,7 @@ export const PlanComparisonTable: React.FC = () => {
               <td className="p-4 font-bold text-floro-primary">
                 {row.feature}
                 {row.note && (
-                  <span className="block text-[11px] font-normal text-floro-muted mt-0.5">
+                  <span className="block text-xs font-medium text-floro-muted mt-0.5">
                     {row.note}
                   </span>
                 )}

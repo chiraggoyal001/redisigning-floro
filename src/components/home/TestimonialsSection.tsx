@@ -58,7 +58,7 @@ export const TestimonialsSection: React.FC = () => {
                     <Star key={i} className="w-4 h-4 fill-current" />
                   ))}
                 </div>
-                <p className="text-xs sm:text-sm text-floro-primary leading-relaxed italic">
+                <p className="text-sm text-floro-primary leading-relaxed italic">
                   &ldquo;{t.quote}&rdquo;
                 </p>
               </div>
@@ -66,10 +66,10 @@ export const TestimonialsSection: React.FC = () => {
               <div className="pt-4 border-t border-floro-border/20">
                 <p className="text-sm font-bold text-floro-primary">{t.name}</p>
                 <div className="flex items-center gap-1.5 text-xs text-floro-muted mt-0.5">
-                  <MapPin className="w-3 h-3 text-floro-accent" />
+                  <MapPin className="w-3.5 h-3.5 text-floro-accent" />
                   <span>{t.city}</span>
                 </div>
-                <span className="inline-block mt-2 text-[10px] font-mono font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-floro-surface-soft border border-floro-border/40 text-floro-secondary">
+                <span className="inline-block mt-2 text-xs font-mono font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-floro-surface-soft border border-floro-border/40 text-floro-secondary">
                   {t.plan}
                 </span>
               </div>

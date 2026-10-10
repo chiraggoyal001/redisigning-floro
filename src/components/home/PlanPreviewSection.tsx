@@ -67,7 +67,7 @@ export const PlanPreviewSection: React.FC = () => {
                 {/* Header Badge */}
                 {plan.badge && (
                   <div className="absolute -top-3.5 left-1/2 -translate-x-1/2">
-                    <span className="px-3 py-1 rounded-full bg-floro-accent text-white text-[11px] font-bold tracking-wider uppercase border-2 border-floro-border shadow-[2px_2px_0_#241D20]">
+                    <span className="px-3.5 py-1 rounded-full bg-floro-accent text-white text-xs font-bold tracking-wider uppercase border-2 border-floro-border shadow-[2px_2px_0_#241D20]">
                       ★ {plan.badge}
                     </span>
                   </div>
@@ -79,41 +79,41 @@ export const PlanPreviewSection: React.FC = () => {
                     <h3 className="text-2xl font-bold font-display text-floro-primary">
                       {plan.name}
                     </h3>
-                    <p className="mt-1 text-xs text-floro-secondary min-h-[32px]">
+                    <p className="mt-1.5 text-sm text-floro-secondary leading-relaxed min-h-[44px]">
                       {plan.tagline}
                     </p>
                   </div>
 
                   {/* Pricing Block */}
-                  <div className="p-4 rounded-card bg-floro-canvas border-2 border-floro-border space-y-1">
-                    <div className="flex items-baseline gap-1">
+                  <div className="p-4 rounded-card bg-floro-canvas border-2 border-floro-border space-y-1.5">
+                    <div className="flex items-baseline gap-1.5">
                       <span className="text-3xl sm:text-4xl font-extrabold font-display tabular-nums text-floro-primary">
                         ₹{plan.monthlyPrice}
                       </span>
-                      <span className="text-xs font-bold text-floro-muted">/ month</span>
+                      <span className="text-sm font-bold text-floro-muted">/ month</span>
                     </div>
-                    <div className="inline-block px-2 py-0.5 rounded bg-floro-surface border border-floro-border text-xs font-mono font-bold text-floro-primary">
+                    <div className="inline-block px-2.5 py-0.5 rounded bg-floro-surface border border-floro-border text-sm font-mono font-bold text-floro-primary">
                       {plan.dailyWeightLabel}
                     </div>
-                    <p className="text-[11px] text-floro-muted pt-1">
+                    <p className="text-xs text-floro-muted pt-1 font-medium">
                       Daily delivery included (Sundays & holidays)
                     </p>
                   </div>
 
                   {/* Inclusions List */}
-                  <div className="space-y-2 text-left">
-                    <p className="text-xs font-mono font-bold uppercase tracking-wider text-floro-muted">
+                  <div className="space-y-2.5 text-left">
+                    <p className="text-xs sm:text-sm font-mono font-bold uppercase tracking-wider text-floro-muted">
                       Daily Packet Inclusions:
                     </p>
-                    <ul className="space-y-2 text-xs text-floro-primary font-medium">
+                    <ul className="space-y-2.5 text-sm text-floro-primary font-medium">
                       {plan.inclusions.map((inc, i) => (
-                        <li key={i} className="flex items-start gap-2">
+                        <li key={i} className="flex items-start gap-2.5">
                           <Check className="w-4 h-4 text-floro-success shrink-0 mt-0.5" />
                           <span>{inc}</span>
                         </li>
                       ))}
                       {plan.exclusions.map((exc, i) => (
-                        <li key={i} className="flex items-start gap-2 text-floro-muted">
+                        <li key={i} className="flex items-start gap-2.5 text-floro-muted">
                           <Minus className="w-4 h-4 text-floro-muted shrink-0 mt-0.5" />
                           <span className="line-through decoration-floro-muted/60">{exc}</span>
                         </li>
@@ -123,8 +123,8 @@ export const PlanPreviewSection: React.FC = () => {
 
                   {/* Special Note */}
                   {plan.specialNote && (
-                    <div className="p-2.5 rounded bg-floro-accent-soft/50 border border-floro-accent/40 text-[11px] text-floro-primary font-semibold flex items-center gap-1.5">
-                      <Sparkles className="w-3.5 h-3.5 text-floro-accent shrink-0" />
+                    <div className="p-2.5 rounded bg-floro-accent-soft/50 border border-floro-accent/40 text-xs sm:text-sm text-floro-primary font-semibold flex items-center gap-2">
+                      <Sparkles className="w-4 h-4 text-floro-accent shrink-0" />
                       <span>{plan.specialNote}</span>
                     </div>
                   )}
@@ -141,7 +141,7 @@ export const PlanPreviewSection: React.FC = () => {
                   >
                     Choose {plan.name}
                   </NeoButton>
-                  <p className="text-[11px] text-floro-muted text-center leading-tight">
+                  <p className="text-xs text-floro-muted text-center leading-normal">
                     {plan.seasonalNote}
                   </p>
                 </div>
@@ -176,7 +176,7 @@ export const PlanPreviewSection: React.FC = () => {
               <h3 className="text-2xl font-bold font-display text-floro-primary">
                 Select Your Daily Premium Setup
               </h3>
-              <p className="text-xs text-floro-secondary">
+              <p className="text-sm text-floro-secondary">
                 At ₹900/month, you can choose how your daily offering is composed:
               </p>
             </div>
@@ -197,11 +197,11 @@ export const PlanPreviewSection: React.FC = () => {
                   onChange={() => setSelectedPremiumConfig("packet_with_mala")}
                   className="mt-1 text-floro-accent focus:ring-floro-accent"
                 />
-                <div className="space-y-0.5 text-left">
-                  <p className="text-sm font-bold text-floro-primary">
+                <div className="space-y-1 text-left">
+                  <p className="text-sm sm:text-base font-bold text-floro-primary">
                     1x Basic Flower Packet + 1x Fresh Marigold Mala (Garland) Daily
                   </p>
-                  <p className="text-xs text-floro-secondary">
+                  <p className="text-sm text-floro-secondary leading-relaxed">
                     Approx. 100 g fresh mix flowers plus one hand-strung, fragrant fresh marigold garland every morning. Ideal for deity adornment.
                   </p>
                 </div>
@@ -222,11 +222,11 @@ export const PlanPreviewSection: React.FC = () => {
                   onChange={() => setSelectedPremiumConfig("two_packets")}
                   className="mt-1 text-floro-accent focus:ring-floro-accent"
                 />
-                <div className="space-y-0.5 text-left">
-                  <p className="text-sm font-bold text-floro-primary">
+                <div className="space-y-1 text-left">
+                  <p className="text-sm sm:text-base font-bold text-floro-primary">
                     Two Basic Flower Packets Daily (Approx. 200 g Total)
                   </p>
-                  <p className="text-xs text-floro-secondary">
+                  <p className="text-sm text-floro-secondary leading-relaxed">
                     Double daily flowers without garland. Ideal for large multi-deity home mandirs, joint families, or elaborate morning aarti.
                   </p>
                 </div>
@@ -237,7 +237,7 @@ export const PlanPreviewSection: React.FC = () => {
               <button
                 type="button"
                 onClick={() => setPremiumModalOpen(false)}
-                className="px-4 py-2 text-xs font-bold text-floro-secondary hover:text-floro-primary"
+                className="px-4 py-2 text-sm font-bold text-floro-secondary hover:text-floro-primary"
               >
                 Cancel
               </button>
