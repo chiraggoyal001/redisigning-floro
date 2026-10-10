@@ -34,7 +34,7 @@ export const PlanPreviewSection: React.FC = () => {
   };
 
   return (
-    <section className="w-full py-16 md:py-24 bg-floro-surface border-b-2 border-floro-border">
+    <section className="w-full py-16 md:py-24 bg-transparent border-b-2 border-floro-border">
       <div className="max-w-container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-2xl mx-auto space-y-3">
           <NeoBadge variant="accent">30-Day Monthly Subscriptions</NeoBadge>

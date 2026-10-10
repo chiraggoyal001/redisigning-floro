@@ -98,7 +98,7 @@ export default function CheckoutPage() {
   };
 
   return (
-    <main className="w-full flex-1 flex flex-col bg-floro-canvas pb-20">
+    <main className="w-full flex-1 flex flex-col bg-transparent pb-20">
       <StepIndicator currentStep={step} />
 
       <div className="max-w-reading mx-auto px-4 sm:px-6 py-8 sm:py-12 w-full">

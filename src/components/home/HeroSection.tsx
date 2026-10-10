@@ -8,7 +8,7 @@ import { LotusIcon } from "@/components/folk-art/LotusIcon";
 
 export const HeroSection: React.FC = () => {
   return (
-    <section className="relative overflow-hidden pt-8 pb-16 md:pt-14 md:pb-24 border-b-2 border-floro-border bg-floro-canvas">
+    <section className="relative overflow-hidden pt-8 pb-16 md:pt-14 md:pb-24 border-b-2 border-floro-border bg-transparent">
       {/* Decorative background subtle pattern */}
       <div className="max-w-container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-8 items-center">

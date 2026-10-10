@@ -57,7 +57,7 @@ export const PincodeChecker: React.FC = () => {
   ];
 
   return (
-    <section id="pincode-check" className="w-full py-12 md:py-16 bg-floro-canvas border-b-2 border-floro-border">
+    <section id="pincode-check" className="w-full py-12 md:py-16 bg-transparent border-b-2 border-floro-border">
       <div className="max-w-reading mx-auto px-4 sm:px-6 text-center">
         <h2 className="text-2xl sm:text-3xl font-bold font-display text-floro-primary">
           Check Delivery Serviceability

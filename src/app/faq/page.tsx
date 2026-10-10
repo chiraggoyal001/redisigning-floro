@@ -14,9 +14,9 @@ export const metadata: Metadata = {
 
 export default function FaqPage() {
   return (
-    <main className="w-full flex flex-col bg-floro-canvas pb-20">
+    <main className="w-full flex flex-col bg-transparent pb-20">
       {/* Header */}
-      <section className="w-full py-12 md:py-16 border-b-2 border-floro-border bg-floro-surface text-center">
+      <section className="w-full py-12 md:py-16 border-b-2 border-floro-border bg-transparent text-center">
         <div className="max-w-reading mx-auto px-4 sm:px-6 space-y-4">
           <span className="text-xs font-mono font-bold tracking-wider uppercase text-floro-accent">
             Help Center

@@ -9,6 +9,8 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
+        background: "#FFF9F1",
+        ring: "#E9005B",
         floro: {
           canvas: "#FFF9F1",
           surface: "#FFFFFF",

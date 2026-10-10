@@ -6,7 +6,7 @@ import { LotusIcon } from "@/components/folk-art/LotusIcon";
 
 export default function NotFoundPage() {
   return (
-    <main className="w-full flex-1 flex flex-col items-center justify-center bg-floro-canvas py-20 px-4 text-center">
+    <main className="w-full flex-1 flex flex-col items-center justify-center bg-transparent py-20 px-4 text-center">
       <div className="max-w-reading mx-auto space-y-6">
         <div className="p-4 rounded-full bg-floro-surface border-2 border-floro-border shadow-neo w-fit mx-auto">
           <LotusIcon size={44} />

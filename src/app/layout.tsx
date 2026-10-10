@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { Providers } from "@/components/layout/Providers";
+import { KalamkariBackground } from "@/components/common/KalamkariBackground";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -38,7 +39,8 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body className="min-h-screen bg-floro-canvas text-floro-primary font-sans antialiased flex flex-col">
+      <body className="min-h-screen bg-floro-canvas text-floro-primary font-sans antialiased flex flex-col relative">
+        <KalamkariBackground />
         <Providers>
           <Header />
           <div className="flex-1 flex flex-col">{children}</div>

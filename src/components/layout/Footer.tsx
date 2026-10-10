@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 import { LotusIcon } from "@/components/folk-art/LotusIcon";
 import { GarlandDivider } from "@/components/folk-art/GarlandDivider";
+import { FolkloreFooterNote } from "@/components/common/KalamkariBackground";
 
 export const Footer: React.FC = () => {
   return (
@@ -125,8 +126,13 @@ export const Footer: React.FC = () => {
           </div>
         </div>
 
+        {/* Folklore Background Citation */}
+        <div className="mt-10 pt-6 border-t border-floro-border/20">
+          <FolkloreFooterNote />
+        </div>
+
         {/* Bottom Bar */}
-        <div className="mt-12 pt-6 border-t border-floro-border/20 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-floro-muted">
+        <div className="mt-6 pt-4 border-t border-floro-border/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-floro-muted">
           <p>© {new Date().getFullYear()} Floro. Delivered with devotion and care every morning.</p>
           <div className="flex items-center gap-4">
             <span>Delivered 365 Days a Year</span>

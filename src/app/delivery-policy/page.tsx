@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 
 export default function DeliveryPolicyPage() {
   return (
-    <main className="w-full flex flex-col bg-floro-canvas py-16">
+    <main className="w-full flex flex-col bg-transparent py-16">
       <div className="max-w-reading mx-auto px-4 sm:px-6 space-y-8 text-left">
         <div className="space-y-2 border-b-2 border-floro-border pb-6">
           <span className="text-xs font-mono font-bold uppercase text-floro-accent">Logistics</span>

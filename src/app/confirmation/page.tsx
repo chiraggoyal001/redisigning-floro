@@ -145,7 +145,7 @@ function ConfirmationContent() {
 
 export default function ConfirmationPage() {
   return (
-    <main className="w-full flex-1 flex flex-col items-center justify-center bg-floro-canvas py-12 px-4 sm:px-6">
+    <main className="w-full flex-1 flex flex-col items-center justify-center bg-transparent py-12 px-4 sm:px-6">
       <Suspense
         fallback={
           <div className="p-12 text-center text-sm font-bold text-floro-muted">
