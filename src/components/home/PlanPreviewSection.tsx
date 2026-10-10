@@ -46,8 +46,8 @@ export const PlanPreviewSection: React.FC<PlanPreviewSectionProps> = ({
   return (
     <section
       className={`w-full ${
-        hideHeader ? "pt-2 pb-16 md:pb-20" : "py-16 md:py-24"
-      } bg-transparent border-b-2 border-floro-border ${className}`}
+        hideHeader ? "pt-2 pb-12 md:pb-16" : "py-14 md:py-20"
+      } bg-transparent ${className}`}
     >
       <div className="max-w-container mx-auto px-4 sm:px-6 lg:px-8">
         {!hideHeader && (

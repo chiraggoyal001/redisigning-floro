@@ -33,6 +33,9 @@ export default function SubscriptionsPage() {
       {/* Plans Cards */}
       <PlanPreviewSection hideHeader={true} hideComparisonLink={true} />
 
+      {/* Folk Garland Accent between Plans Cards and Table */}
+      <GarlandDivider className="py-6" />
+
       {/* Detailed Plan Matrix Table */}
       <section className="w-full py-16 max-w-container mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
         <div className="text-center max-w-xl mx-auto space-y-2">

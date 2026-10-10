@@ -18,6 +18,7 @@ export default function HomePage() {
       <HeroSection />
       <TrustStrip />
       <PlanPreviewSection />
+      <GarlandDivider className="py-6" />
       <HowItWorksTeaser />
       <GarlandDivider className="py-6" />
       <FlowerCareSection />
