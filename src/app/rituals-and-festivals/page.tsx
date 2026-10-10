@@ -81,7 +81,7 @@ export default function RitualsAndFestivalsPage() {
       date: "Ashvin Shukla Pratipada to Navami",
       flower: "Vibrant Crimson Hibiscus & Mogra",
       desc: "Nine sacred nights of worship. Red blossoms symbolize the triumph of Shakti and righteousness.",
-      image: "/images/madhubani/hanuman_mangalvar.jpg",
+      image: "/images/madhubani/durga_navratri.jpg",
     },
     {
       title: "Diwali & Lakshmi Puja",
