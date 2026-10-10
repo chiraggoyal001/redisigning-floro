@@ -11,7 +11,17 @@ import { NeoButton } from "@/components/common/NeoButton";
 import { NeoCard } from "@/components/common/NeoCard";
 import { NeoBadge } from "@/components/common/NeoBadge";
 
-export const PlanPreviewSection: React.FC = () => {
+export interface PlanPreviewSectionProps {
+  hideHeader?: boolean;
+  hideComparisonLink?: boolean;
+  className?: string;
+}
+
+export const PlanPreviewSection: React.FC<PlanPreviewSectionProps> = ({
+  hideHeader = false,
+  hideComparisonLink = false,
+  className = "",
+}) => {
   const router = useRouter();
   const { setSelectedPlan, setPremiumOption } = useSubscription();
   const [premiumModalOpen, setPremiumModalOpen] = useState(false);
@@ -34,20 +44,30 @@ export const PlanPreviewSection: React.FC = () => {
   };
 
   return (
-    <section className="w-full py-16 md:py-24 bg-transparent border-b-2 border-floro-border">
+    <section
+      className={`w-full ${
+        hideHeader ? "pt-2 pb-16 md:pb-20" : "py-16 md:py-24"
+      } bg-transparent border-b-2 border-floro-border ${className}`}
+    >
       <div className="max-w-container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center max-w-2xl mx-auto space-y-3">
-          <NeoBadge variant="accent">30-Day Monthly Subscriptions</NeoBadge>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold font-display text-floro-primary">
-            Choose Your Daily Puja Offering
-          </h2>
-          <p className="text-sm sm:text-base text-floro-secondary leading-relaxed">
-            Priced monthly, delivered fresh every morning before 7:30 AM. No minimum lock-in; pause anytime for travel.
-          </p>
-        </div>
+        {!hideHeader && (
+          <div className="text-center max-w-2xl mx-auto space-y-3">
+            <NeoBadge variant="accent">30-Day Monthly Subscriptions</NeoBadge>
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold font-display text-floro-primary">
+              Choose Your Daily Puja Offering
+            </h2>
+            <p className="text-sm sm:text-base text-floro-secondary leading-relaxed">
+              Priced monthly, delivered fresh every morning before 7:30 AM. No minimum lock-in; pause anytime for travel.
+            </p>
+          </div>
+        )}
 
         {/* 3 Plan Cards Grid */}
-        <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch neo-card-group group/cards">
+        <div
+          className={`${
+            hideHeader ? "mt-4" : "mt-12"
+          } grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch neo-card-group group/cards`}
+        >
           {FLORO_PLANS.map((plan) => {
             const isBasic = plan.id === "basic";
 
@@ -151,14 +171,16 @@ export const PlanPreviewSection: React.FC = () => {
         </div>
 
         {/* Detailed Comparison Link */}
-        <div className="mt-10 text-center">
-          <Link
-            href="/subscriptions"
-            className="inline-flex items-center gap-2 text-sm font-bold text-floro-primary hover:text-floro-accent transition-colors underline underline-offset-4"
-          >
-            Compare detailed plan matrix and varieties side-by-side →
-          </Link>
-        </div>
+        {!hideComparisonLink && (
+          <div className="mt-10 text-center">
+            <Link
+              href="/subscriptions"
+              className="inline-flex items-center gap-2 text-sm font-bold text-floro-primary hover:text-floro-accent transition-colors underline underline-offset-4"
+            >
+              Compare detailed plan matrix and varieties side-by-side →
+            </Link>
+          </div>
+        )}
       </div>
 
       {/* Premium Configuration Selection Modal */}

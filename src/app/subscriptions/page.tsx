@@ -16,8 +16,8 @@ export default function SubscriptionsPage() {
   return (
     <main className="w-full flex flex-col bg-transparent pb-20">
       {/* Page Hero */}
-      <section className="w-full py-12 md:py-16 border-b-2 border-floro-border bg-transparent text-center">
-        <div className="max-w-reading mx-auto px-4 sm:px-6 space-y-4">
+      <section className="w-full pt-12 md:pt-16 pb-4 bg-transparent text-center">
+        <div className="max-w-reading mx-auto px-4 sm:px-6 space-y-3">
           <span className="text-xs font-mono font-bold tracking-wider uppercase text-floro-accent">
             Devotional Flower Plans
           </span>
@@ -25,13 +25,13 @@ export default function SubscriptionsPage() {
             Daily Puja Flower Subscriptions
           </h1>
           <p className="text-sm sm:text-base text-floro-secondary leading-relaxed">
-            Fresh, hand-selected flowers and sacred botanicals delivered to your door every single morning before 7:30 AM. No long lock-ins; pause anytime.
+            Priced monthly, delivered fresh every morning before 7:30 AM.
           </p>
         </div>
       </section>
 
       {/* Plans Cards */}
-      <PlanPreviewSection />
+      <PlanPreviewSection hideHeader={true} hideComparisonLink={true} />
 
       {/* Detailed Plan Matrix Table */}
       <section className="w-full py-16 max-w-container mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
