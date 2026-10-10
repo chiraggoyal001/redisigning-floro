@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
@@ -5,8 +7,11 @@ import { ArrowRight, Sparkles, MapPin, CheckCircle2 } from "lucide-react";
 import { NeoButton } from "@/components/common/NeoButton";
 import { NeoBadge } from "@/components/common/NeoBadge";
 import { LotusIcon } from "@/components/folk-art/LotusIcon";
+import { useServiceability } from "@/context/ServiceabilityContext";
 
 export const HeroSection: React.FC = () => {
+  const { openServiceabilityModal } = useServiceability();
+
   return (
     <section className="relative overflow-hidden pt-8 pb-16 md:pt-14 md:pb-24 border-b-2 border-floro-border bg-transparent">
       {/* Decorative background subtle pattern */}
@@ -76,13 +81,14 @@ export const HeroSection: React.FC = () => {
 
             {/* Serviceability anchor link */}
             <div className="pt-2">
-              <a
-                href="#pincode-check"
-                className="inline-flex items-center gap-1.5 text-xs font-bold text-floro-secondary hover:text-floro-accent transition-colors underline underline-offset-4"
+              <button
+                type="button"
+                onClick={() => openServiceabilityModal()}
+                className="inline-flex items-center gap-1.5 text-xs font-bold text-floro-secondary hover:text-floro-accent transition-colors underline underline-offset-4 cursor-pointer"
               >
                 <MapPin className="w-4 h-4 text-floro-accent" />
                 Check pin code serviceability in your city
-              </a>
+              </button>
             </div>
           </div>
 

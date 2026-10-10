@@ -5,7 +5,7 @@ import { SacredLeaves } from "@/components/folk-art/SacredLeaves";
 
 export const FlowerCareSection: React.FC = () => {
   return (
-    <section className="w-full py-16 md:py-24 bg-transparent border-b-2 border-floro-border">
+    <section className="w-full py-14 md:py-20 bg-transparent">
       <div className="max-w-container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           {/* Left: Botanical Care standards */}

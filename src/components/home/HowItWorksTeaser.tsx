@@ -32,7 +32,7 @@ export const HowItWorksTeaser: React.FC = () => {
   ];
 
   return (
-    <section className="w-full py-16 md:py-24 bg-transparent border-b-2 border-floro-border">
+    <section className="w-full py-14 md:py-20 bg-transparent">
       <div className="max-w-container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-xl mx-auto space-y-3">
           <span className="text-xs font-mono font-bold tracking-wider uppercase text-floro-muted">

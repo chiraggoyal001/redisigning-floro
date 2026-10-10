@@ -3,6 +3,8 @@
 import React, { useEffect } from "react";
 import { SubscriptionProvider } from "@/context/SubscriptionContext";
 import { AuthProvider } from "@/context/AuthContext";
+import { ServiceabilityProvider } from "@/context/ServiceabilityContext";
+import { ServiceabilityModal } from "@/components/common/ServiceabilityModal";
 
 export const Providers: React.FC<{ children: React.ReactNode }> = ({
   children,
@@ -29,7 +31,12 @@ export const Providers: React.FC<{ children: React.ReactNode }> = ({
 
   return (
     <AuthProvider>
-      <SubscriptionProvider>{children}</SubscriptionProvider>
+      <SubscriptionProvider>
+        <ServiceabilityProvider>
+          {children}
+          <ServiceabilityModal />
+        </ServiceabilityProvider>
+      </SubscriptionProvider>
     </AuthProvider>
   );
 };

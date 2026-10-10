@@ -10,7 +10,7 @@ export default function TermsPage() {
   return (
     <main className="w-full flex flex-col bg-transparent py-16">
       <div className="max-w-reading mx-auto px-4 sm:px-6 space-y-8 text-left">
-        <div className="space-y-2 border-b-2 border-floro-border pb-6">
+        <div className="space-y-2 border-b border-floro-border/30 pb-6">
           <span className="text-xs font-mono font-bold uppercase text-floro-accent">Legal & Operational</span>
           <h1 className="text-3xl sm:text-4xl font-bold font-display text-floro-primary">
             Terms of Service

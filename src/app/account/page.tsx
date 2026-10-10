@@ -87,7 +87,7 @@ export default function AccountPage() {
   return (
     <main className="w-full flex-1 flex flex-col bg-transparent pb-20">
       {/* Header */}
-      <section className="w-full py-10 border-b-2 border-floro-border bg-transparent">
+      <section className="w-full pt-10 pb-4 bg-transparent">
         <div className="max-w-container mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
           <div className="space-y-1">
             <span className="text-xs font-mono font-bold uppercase tracking-wider text-floro-accent">

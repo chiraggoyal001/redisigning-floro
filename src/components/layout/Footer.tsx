@@ -1,10 +1,15 @@
+"use client";
+
 import React from "react";
 import Link from "next/link";
 import { LotusIcon } from "@/components/folk-art/LotusIcon";
 import { GarlandDivider } from "@/components/folk-art/GarlandDivider";
 import { FolkloreFooterNote } from "@/components/common/KalamkariBackground";
+import { useServiceability } from "@/context/ServiceabilityContext";
 
 export const Footer: React.FC = () => {
+  const { openServiceabilityModal } = useServiceability();
+
   return (
     <footer className="w-full bg-floro-surface border-t-2 border-floro-border mt-auto">
       {/* Visual Garland Accent */}
@@ -50,9 +55,13 @@ export const Footer: React.FC = () => {
                 </Link>
               </li>
               <li>
-                <Link href="/#pincode-check" className="hover:text-floro-accent transition-colors">
+                <button
+                  type="button"
+                  onClick={() => openServiceabilityModal()}
+                  className="hover:text-floro-accent transition-colors text-left cursor-pointer"
+                >
                   Check Serviceable PIN Codes
-                </Link>
+                </button>
               </li>
               <li>
                 <Link href="/account" className="hover:text-floro-accent transition-colors">
