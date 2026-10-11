@@ -133,7 +133,7 @@ export default function AccountPage() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
           {/* Left: Active Subscription Summary */}
           <div className="lg:col-span-7 space-y-6">
-            <NeoCard variant="white" hasShadow={true} padding="lg" rounded="largeCard" className="space-y-6">
+            <NeoCard variant="white" hasShadow={true} isHoverable={false} padding="lg" rounded="largeCard" className="space-y-6">
               <div className="flex items-start justify-between border-b-2 border-floro-border/20 pb-4">
                 <div>
                   <span className="text-xs font-mono font-bold uppercase tracking-wider text-floro-muted">
@@ -224,7 +224,7 @@ export default function AccountPage() {
             </NeoCard>
 
             {/* Inclusions summary for this plan */}
-            <NeoCard variant="soft" padding="md" className="space-y-3 text-xs">
+            <NeoCard variant="soft" isHoverable={false} padding="md" className="space-y-3 text-xs">
               <h3 className="font-bold text-sm text-floro-primary flex items-center gap-2">
                 <LotusIcon size={20} />
                 Daily Offering Composition
@@ -244,7 +244,7 @@ export default function AccountPage() {
           {/* Right: Delivery Address & Receipt Log */}
           <div className="lg:col-span-5 space-y-6">
             {/* Delivery Destination */}
-            <NeoCard variant="white" hasShadow={true} padding="md" className="space-y-3 text-left">
+            <NeoCard variant="white" hasShadow={true} isHoverable={false} padding="md" className="space-y-3 text-left">
               <div className="flex items-center justify-between border-b border-floro-border/20 pb-2">
                 <span className="text-xs font-mono font-bold uppercase tracking-wider text-floro-muted flex items-center gap-1.5">
                   <MapPin className="w-4 h-4 text-floro-accent" />
@@ -273,7 +273,7 @@ export default function AccountPage() {
             </NeoCard>
 
             {/* Recent Orders Log */}
-            <NeoCard variant="white" hasShadow={true} padding="md" className="space-y-3 text-left">
+            <NeoCard variant="white" hasShadow={true} isHoverable={false} padding="md" className="space-y-3 text-left">
               <div className="flex items-center justify-between border-b border-floro-border/20 pb-2">
                 <span className="text-xs font-mono font-bold uppercase tracking-wider text-floro-muted flex items-center gap-1.5">
                   <Receipt className="w-4 h-4 text-floro-indigo" />

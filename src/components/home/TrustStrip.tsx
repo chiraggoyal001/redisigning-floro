@@ -32,7 +32,7 @@ export const TrustStrip: React.FC = () => {
           {trustPoints.map((item, idx) => (
             <div
               key={idx}
-              className="p-5 rounded-card border-2 border-floro-border bg-floro-surface shadow-[2px_2px_0_#241D20] hover:shadow-neo-hover transition-all flex flex-col gap-2"
+              className="neo-card-reveal p-5 rounded-card border-2 border-floro-border bg-floro-surface shadow-[2px_2px_0_#241D20] hover:shadow-neo-hover flex flex-col gap-2"
             >
               <div className="p-2 w-fit rounded-control bg-floro-surface border-2 border-floro-border shadow-[1px_1px_0_#241D20]">
                 {item.icon}

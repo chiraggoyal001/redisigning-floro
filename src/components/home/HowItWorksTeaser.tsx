@@ -50,7 +50,7 @@ export const HowItWorksTeaser: React.FC = () => {
           {steps.map((st) => (
             <div
               key={st.num}
-              className="p-6 rounded-card border-2 border-floro-border bg-floro-surface shadow-neo flex flex-col justify-between"
+              className="neo-card-reveal p-6 rounded-card border-2 border-floro-border bg-floro-surface shadow-neo hover:shadow-neo-hover flex flex-col justify-between"
             >
               <div className="space-y-4">
                 <div className="flex items-center justify-between">

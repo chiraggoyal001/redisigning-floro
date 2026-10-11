@@ -86,7 +86,7 @@ export default function HowItWorksPage() {
             Our Operational Commitments
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <div className="p-4 rounded-card border-2 border-floro-border bg-floro-surface shadow-[2px_2px_0_#241D20] flex items-start gap-3">
+            <div className="neo-card-reveal p-4 rounded-card border-2 border-floro-border bg-floro-surface shadow-[2px_2px_0_#241D20] hover:shadow-neo-hover flex items-start gap-3">
               <Clock className="w-5 h-5 text-floro-accent shrink-0 mt-0.5" />
               <div>
                 <h4 className="text-sm font-bold text-floro-primary">Morning Fulfillment (5:30 – 7:30 AM)</h4>
@@ -96,7 +96,7 @@ export default function HowItWorksPage() {
               </div>
             </div>
 
-            <div className="p-4 rounded-card border-2 border-floro-border bg-floro-surface shadow-[2px_2px_0_#241D20] flex items-start gap-3">
+            <div className="neo-card-reveal p-4 rounded-card border-2 border-floro-border bg-floro-surface shadow-[2px_2px_0_#241D20] hover:shadow-neo-hover flex items-start gap-3">
               <Sun className="w-5 h-5 text-floro-marigold shrink-0 mt-0.5" />
               <div>
                 <h4 className="text-sm font-bold text-floro-primary">Sundays & Festivals Without Fail</h4>
@@ -106,7 +106,7 @@ export default function HowItWorksPage() {
               </div>
             </div>
 
-            <div className="p-4 rounded-card border-2 border-floro-border bg-floro-surface shadow-[2px_2px_0_#241D20] flex items-start gap-3">
+            <div className="neo-card-reveal p-4 rounded-card border-2 border-floro-border bg-floro-surface shadow-[2px_2px_0_#241D20] hover:shadow-neo-hover flex items-start gap-3">
               <ShieldCheck className="w-5 h-5 text-floro-success shrink-0 mt-0.5" />
               <div>
                 <h4 className="text-sm font-bold text-floro-primary">Hand-Sorted Purity</h4>
@@ -116,7 +116,7 @@ export default function HowItWorksPage() {
               </div>
             </div>
 
-            <div className="p-4 rounded-card border-2 border-floro-border bg-floro-surface shadow-[2px_2px_0_#241D20] flex items-start gap-3">
+            <div className="neo-card-reveal p-4 rounded-card border-2 border-floro-border bg-floro-surface shadow-[2px_2px_0_#241D20] hover:shadow-neo-hover flex items-start gap-3">
               <HeartHandshake className="w-5 h-5 text-floro-terracotta shrink-0 mt-0.5" />
               <div>
                 <h4 className="text-sm font-bold text-floro-primary">Vacation Holds with 1 Click</h4>

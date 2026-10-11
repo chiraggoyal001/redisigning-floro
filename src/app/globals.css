@@ -81,14 +81,22 @@
     will-change: transform, opacity, filter;
   }
 
-  /* Minimal blur on sibling cards when hovering in a group */
+  /* Zoom-in effect on hover for all relevant cards */
+  .neo-card-reveal:hover,
+  .neo-card-reveal:focus-within {
+    transform: scale(1.025);
+    z-index: 10;
+    position: relative;
+  }
+
+  /* Minimal blur on sibling cards ONLY when hovering within .neo-card-group */
   .neo-card-group:hover .neo-card-reveal {
     transform: scale(0.99);
     opacity: 0.82;
     filter: blur(0.5px);
   }
 
-  /* Focused/hovered card stands out crisp and scaled */
+  /* Focused/hovered card in a group overrides sibling blur and scales up crisp */
   .neo-card-group .neo-card-reveal:hover,
   .neo-card-group .neo-card-reveal:focus-within {
     transform: scale(1.025) !important;

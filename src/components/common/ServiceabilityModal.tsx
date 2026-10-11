@@ -180,7 +180,7 @@ export const ServiceabilityModal: React.FC = () => {
         )}
 
         {status === "serviceable" && result && (
-          <NeoCard variant="white" hasShadow={true} padding="md" className="text-left border-floro-success">
+          <NeoCard variant="white" hasShadow={true} isHoverable={false} padding="md" className="text-left border-floro-success">
             <div className="flex items-start gap-3">
               <div className="p-1.5 rounded-full bg-floro-success-soft text-floro-success shrink-0 mt-0.5">
                 <CheckCircle2 className="w-5 h-5" />
@@ -201,7 +201,7 @@ export const ServiceabilityModal: React.FC = () => {
         )}
 
         {status === "unavailable" && (
-          <NeoCard variant="soft" hasShadow={true} padding="md" className="text-left">
+          <NeoCard variant="soft" hasShadow={true} isHoverable={false} padding="md" className="text-left">
             <div className="flex items-start gap-3">
               <div className="p-1.5 rounded-full bg-floro-warning-soft text-floro-warning shrink-0 mt-0.5">
                 <AlertCircle className="w-5 h-5" />
