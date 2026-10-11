@@ -120,13 +120,6 @@ export const HeroSection: React.FC = () => {
                   </span>
                 </div>
               </div>
-
-              {/* Offset decorative stamp */}
-              <div className="hidden sm:flex absolute -top-4 -right-4 p-2.5 rounded-full bg-floro-accent-soft border-2 border-floro-border shadow-neo items-center justify-center rotate-6">
-                <span className="text-xs font-mono font-bold text-floro-accent tracking-normal uppercase">
-                  365 Days
-                </span>
-              </div>
             </div>
           </div>
         </div>

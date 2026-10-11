@@ -49,7 +49,7 @@ export default function ContactPage() {
               Our devotee support desk is active early in the morning during daily fulfillment hours.
             </p>
 
-            <div className="space-y-4 pt-2 neo-card-group group/cards">
+            <div className="space-y-4 pt-2">
               <NeoCard variant="white" hasShadow={true} padding="md" className="flex items-start gap-3">
                 <div className="p-2 rounded bg-floro-canvas border border-floro-border text-floro-accent">
                   <Mail className="w-5 h-5" />

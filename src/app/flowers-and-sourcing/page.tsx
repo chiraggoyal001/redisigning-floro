@@ -33,7 +33,7 @@ export default function FlowersAndSourcingPage() {
 
       {/* Sourcing Principles */}
       <section className="max-w-container mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 neo-card-group group/cards">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <NeoCard variant="white" hasShadow={true} padding="md" className="space-y-2">
             <div className="p-2 rounded bg-floro-canvas border border-floro-border w-fit text-floro-leaf">
               <Leaf className="w-5 h-5" />
