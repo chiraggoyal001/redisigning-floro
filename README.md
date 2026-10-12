@@ -67,7 +67,7 @@ I separated the core subscription journey from features that enrich the broader 
 The redesign communicates product decisions through four focused visual moments:
 
 ### Visual Moment 1: Homepage & Cultural Identity
-![Floro Redesigned Homepage Hero](docs/screenshots/hero_homepage_browser.png)
+![Floro Redesigned Homepage Hero](docs/screenshots/hero-floro.png)
 
 - **What decision does this demonstrate?** Pairs Madhubani-inspired devotional visual craft (Lord Surya on chariot) with high-contrast Neo-Brutalist typography (`Space Grotesk` / `DM Sans`), warm ivory tones (`#FFF9F1`), and prominent primary actions (*Explore Subscriptions* and *Check PIN Code*).
 - **Why it matters to the user?** Evokes the sanctity of morning worship immediately while ensuring that visitors can immediately understand the product offering and check delivery availability without navigational friction.
@@ -75,7 +75,7 @@ The redesign communicates product decisions through four focused visual moments:
 ---
 
 ### Visual Moment 2: Subscription Comparison & Portion Clarity
-![Subscription Plan Selection Cards](docs/screenshots/subscription_plans_and_matrix.png)
+![Subscription Plan Selection Cards](docs/screenshots/sub1-floro.jpeg)
 
 - **What decision does this demonstrate?** Organizes the three tiers (Value at ₹450/mo, Basic at ₹600/mo, Premium at ₹900/mo) with explicit daily packet weights (~50g, ~100g, ~200g/Mala) and highlighted weekly inclusions (such as Monday Belpatra for Lord Shiva).
 - **Why it matters to the user?** Eliminates the common ambiguity where subscribers cannot tell whether listed gram weights represent a daily delivery or a monthly aggregate, allowing them to choose a plan suited to their mandir size with confidence.
@@ -83,7 +83,9 @@ The redesign communicates product decisions through four focused visual moments:
 ---
 
 ### Visual Moment 3: Cultural & Botanical Depth
-![Botanical Flower and Sacred Leaf Glossary](docs/screenshots/botanical_glossary_section.png)
+![Botanical Varieties and Sourcing](docs/screenshots/botany.jpeg)
+
+![Devotional Culture and Deity Calendar](docs/screenshots/culture.jpeg)
 
 - **What decision does this demonstrate?** Introduces dedicated bilingual botanical cards with Devanagari script (*बिल्वपत्र*, *दूर्वा*, *तुलसी*, *अपराजिता*), traditional deity associations, and respectful *nirmalya* (spent flower) composting guidance.
 - **Why it matters to the user?** Transforms the product from an anonymous flower delivery utility into a respectful morning ritual companion, reassuring devotees that flowers are treated with ritual reverence from harvest to disposal.
@@ -91,7 +93,7 @@ The redesign communicates product decisions through four focused visual moments:
 ---
 
 ### Visual Moment 4: Operational Transparency & Subscriber Journey
-![Subscriber Journey and Comparison Matrix Navigation](docs/screenshots/plan_cards_how_it_works.png)
+![Subscriber Journey and Comparison Matrix Navigation](docs/screenshots/Screenshot_13-10-2026_13419_localhost.jpeg)
 
 - **What decision does this demonstrate?** Maps out the subscriber journey through a transparent 4-step flow: dawn farm sourcing, daily doorstep delivery by 7:30 AM, holiday continuity (365 days), and flexible pause controls.
 - **Why it matters to the user?** Directly addresses the top operational questions customers ask before subscribing: "Will flowers arrive in time for my morning puja?" and "Can I pause deliveries when traveling?"
