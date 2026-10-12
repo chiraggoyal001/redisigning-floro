@@ -5,7 +5,7 @@
 An independent redesign concept exploring how cultural context, clearer subscription choices, and transparent service expectations could shape the customer experience for a daily puja-flower subscription.
 
 - **Project type:** Independent product and UX exploration
-- **Role:** Product Designer & Front-End Developer
+- **Role:** Product Manager
 - **Tech stack:** Next.js 14 (App Router), TypeScript, Tailwind CSS
 - **Status:** Interactive front-end prototype; payment processing and production integrations are not implemented.
 
