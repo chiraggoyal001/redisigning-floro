@@ -165,7 +165,7 @@ cd redisigning-floro
 # 2. Install dependencies
 npm install
 
-# 3. Start local development server
+# 3. Start the local development server
 npm run dev
 ```
 
