@@ -1,12 +1,10 @@
 "use client";
 
 import React from "react";
-import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, Sparkles, MapPin, CheckCircle2 } from "lucide-react";
 import { NeoButton } from "@/components/common/NeoButton";
 import { NeoBadge } from "@/components/common/NeoBadge";
-import { LotusIcon } from "@/components/folk-art/LotusIcon";
 import { useServiceability } from "@/context/ServiceabilityContext";
 
 export const HeroSection: React.FC = () => {
@@ -97,28 +95,17 @@ export const HeroSection: React.FC = () => {
             <div className="relative mx-auto max-w-md lg:max-w-none">
               {/* Outer decorative card */}
               <div className="relative rounded-largeCard overflow-hidden border-2 border-floro-border shadow-neo-lg bg-floro-surface">
-                <Image
-                  src="/images/floro_hero_concept.jpg"
-                  alt="Devotional home mandir puja flower offering with marigolds and lotus"
-                  width={600}
-                  height={450}
-                  priority
-                  className="w-full h-auto object-cover"
+                <video
+                  src="/videos/floro.mp4"
+                  poster="/images/floro_hero_poster.jpg"
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  preload="auto"
+                  aria-label="Daily devotional flower packet delivery video"
+                  className="w-full h-auto aspect-[16/9] object-cover block"
                 />
-
-                {/* Floating pill over image */}
-                <div className="absolute bottom-3 left-3 right-3 p-3 bg-floro-surface/95 backdrop-blur-sm border-2 border-floro-border rounded-control shadow-[2px_2px_0_#241D20] flex items-center justify-between">
-                  <div className="flex items-center gap-2">
-                    <LotusIcon size={24} />
-                    <div className="text-left">
-                      <p className="text-sm font-bold text-floro-primary">Daily Morning Puja Packet</p>
-                      <p className="text-xs text-floro-muted">Hand-inspected marigolds, hibiscus & tulsi</p>
-                    </div>
-                  </div>
-                  <span className="text-xs font-mono font-bold px-2 py-0.5 bg-floro-marigold rounded border border-floro-border">
-                    Fresh
-                  </span>
-                </div>
               </div>
             </div>
           </div>

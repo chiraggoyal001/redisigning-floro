@@ -28,3 +28,10 @@ yarn-error.log*
 
 # Netlify
 .netlify
+
+# Build Info
+*.tsbuildinfo
+
+# Raw Local Assets
+/floro.mp4
+/Gemini_Generated_Image_*.png

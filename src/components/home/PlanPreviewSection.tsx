@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { Check, Minus, ArrowRight, Sparkles } from "lucide-react";
@@ -94,6 +95,21 @@ export const PlanPreviewSection: React.FC<PlanPreviewSectionProps> = ({
                 )}
 
                 <div className="space-y-6">
+                  {/* Product Preview Banner */}
+                  <div className="w-full relative aspect-[16/10] rounded-card overflow-hidden border-2 border-floro-border bg-floro-canvas shadow-[2px_2px_0_#241D20] group/preview">
+                    <Image
+                      src="/images/plans/floro_plan_product_preview.png"
+                      alt={`${plan.name} Daily Puja Flower Packet Preview`}
+                      fill
+                      sizes="(max-width: 768px) 100vw, 33vw"
+                      className="object-cover transition-transform duration-300 ease-out group-hover/preview:scale-105"
+                      priority={isBasic}
+                    />
+                    <div className="absolute bottom-2 left-2 px-2 py-0.5 rounded bg-floro-surface/95 backdrop-blur-sm border border-floro-border text-[11px] font-mono font-bold text-floro-primary shadow-[1px_1px_0_#241D20]">
+                      {plan.dailyWeightLabel}
+                    </div>
+                  </div>
+
                   {/* Title & Tagline */}
                   <div>
                     <h3 className="text-2xl font-bold font-display text-floro-primary">
