@@ -11,6 +11,7 @@ An independent redesign concept exploring how cultural context, clearer subscrip
 
 > **Disclaimer:** This project uses [Floro.in](https://floro.in/) as a public reference point (observed October 2026). It is an independent design study, not affiliated with or endorsed by Floro, and the proposed experience does not represent its actual commercial terms or service commitments.
 
+> **Redisigned Floro website:** https://redisigning-floro.netlify.app
 ---
 
 ## 1. Project Background & Intent
